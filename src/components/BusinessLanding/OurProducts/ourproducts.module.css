@@ -1,0 +1,30 @@
+.card_heading {
+    text-align: center;
+    color: #FFF;
+    text-shadow: 0px 1px 0px rgba(0, 0, 0, 0.35);
+    font-family: Outfit;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px; /* 120% */
+    letter-spacing: 0.117px;
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.80) 0%, rgba(255, 255, 255, 0.80) 81.76%, rgba(232, 223, 255, 0.80) 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.card_subheading {
+    color: rgba(255, 255, 255, 0.40);
+    text-shadow: 0px 2px 1px rgba(0, 0, 0, 0.10);
+    font-family: Outfit;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 20px; /* 125% */
+    letter-spacing: 0.117px;
+}
+.card {
+    border-radius: 16px;
+    border: 1px solid rgba(255, 255, 255, 0.10);
+    background: linear-gradient(108deg, #1E1E1E 2.39%, #171717 27.66%, #0E0E0E 98.74%), #6435E9;
+}

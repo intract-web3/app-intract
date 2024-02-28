@@ -1,0 +1,6 @@
+.button_discover_more {
+    border-radius: 8px;
+    border: 1px solid rgba(255, 255, 255, 0.10);
+    background: #121212;
+    padding: 14px 64px;
+}
