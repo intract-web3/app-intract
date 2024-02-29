@@ -1,6 +1,6 @@
 import GenericLayout from "@/components/genericSection/genericHeadingLayout/GenericLayout";
 import React from "react";
-import ourproductStyles from "./ourProducts.module.css";
+import ourproductStyles from "./ourproducts.module.css";
 import Image from "next/image";
 import questing from "./assets/ourproduct1.svg";
 import clsx from "clsx";
@@ -16,9 +16,9 @@ function OurProducts() {
           </>
         }
       />
-      <section className="grid grid-cols-1 md:grid-cols-2">
+      <section className="grid grid-cols-1 gap-[16px] md:grid-cols-2">
         <div className={clsx(ourproductStyles.card, "col-span-2 md:flex")}>
-          <div className="">
+          <div className={ourproductStyles.card_inner}>
             <p className={ourproductStyles.card_heading}>Questing</p>
             <span className={ourproductStyles.card_subheading}>
               Engage in a diverse range of quests tailored to your interests,

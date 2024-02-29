@@ -10,7 +10,12 @@ interface IActionCardsProps {
 }
 const ActionCards: FC<IActionCardsProps> = (props) => {
   return (
-    <article className={clsx(`flex p-24 flex-rows`)}>
+    <article
+      className={clsx(
+        `flex flex-col md:tracking-default`,
+        `${actionStyles.action_card}`
+      )}
+    >
       <section>
         <p className={actionStyles.heading}>{props.heading}</p>
         <p className={actionStyles.description}>{props.description}</p>

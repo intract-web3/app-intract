@@ -1,0 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit&display=swap');
+.faq_card {
+    display: flex;
+    padding: 12px 16px;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 8px;border-radius: 8px;
+    border: 1px solid rgba(255, 255, 255, 0.07);
+    background: rgba(255, 255, 255, 0.07);
+    max-height: 56px;
+}
+
+.faq_text {
+    color: rgba(255, 255, 255, 0.40);
+    text-shadow: 0px 0px 5px rgba(0, 0, 0, 0.10);
+    font-family: 'Outfit';
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    align-content: center;
+    line-height: 20px; /* 125% */
+    letter-spacing: 0.117px;
+    color:#FFFFFF66;
+}

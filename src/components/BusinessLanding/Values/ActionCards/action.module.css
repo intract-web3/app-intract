@@ -38,3 +38,7 @@
     line-height: 24px; /* 120% */
     letter-spacing: 0.117px;
 }
+
+.action_card {
+    gap:64px;
+}

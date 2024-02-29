@@ -8,7 +8,7 @@ function Explore() {
   return (
     <article
       className={clsx(
-        "flex flex-col justify-between h-[624px]",
+        "flex flex-col justify-between min-h-[100vh]",
         `${exploreMain.main}`
       )}
     >

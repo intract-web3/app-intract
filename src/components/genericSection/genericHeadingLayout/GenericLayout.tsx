@@ -8,7 +8,12 @@ interface IGenericHeadingLayout {
 }
 const GenericLayout: FC<IGenericHeadingLayout> = (props) => {
   return (
-    <article className={clsx("flex flex-col justify-center", props.className)}>
+    <article
+      className={clsx(
+        "flex flex-col justify-center mb-[32px]",
+        props.className
+      )}
+    >
       <section>
         <p className={genericLayout.heading}>{props.heading}</p>
         <p className={genericLayout.subheading}>{props.subheading}</p>

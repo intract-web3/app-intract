@@ -4,7 +4,11 @@ import Explore from "./ExploreSection/Explore";
 import OurProducts from "./OurProducts/OurProducts";
 import Values from "./Values/Values";
 import PopularQuest from "./PopularQuests/PopularQuest";
-
+import Numbers from "./Numbers/Numbers";
+import tear from "./assets/tear.svg";
+import Image from "next/image";
+import Explorer from "./Explorer/Explorer";
+import FAQ from "./FAQs/FAQ";
 function BusinessLanding() {
   return (
     <div className={businessLandingStyles.container}>
@@ -13,6 +17,10 @@ function BusinessLanding() {
         <OurProducts />
         <Values />
         <PopularQuest />
+        <Numbers />
+        <Image src={tear} alt="page-tear" />
+        <Explorer />
+        <FAQ />
       </div>
     </div>
   );

@@ -1,0 +1,14 @@
+.businessLandingContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+@media screen and (max-width: 500px) {
+    .container {
+        padding: 24px 16px;
+    }
+    .businessLandingContainer {
+        gap: 48px;
+    }
+}

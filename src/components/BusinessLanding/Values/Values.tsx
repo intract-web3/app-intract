@@ -4,6 +4,7 @@ import { actionCardDetails } from "./utils";
 import valuesCover from "./assets/valuescover.svg";
 import ActionCards from "./ActionCards/ActionCards";
 import GenericLayout from "@/components/genericSection/genericHeadingLayout/GenericLayout";
+import clsx from "clsx";
 function Values() {
   return (
     <article>
@@ -17,17 +18,23 @@ function Values() {
           </div>
         }
       />
-      <Image src={valuesCover} className="w-full" alt={"values-cover"}></Image>
-      {actionCardDetails.map((actionCardDetail, index) => {
-        return (
-          <ActionCards
-            key={index}
-            textFlag={index % 2 == 0}
-            src={actionCardDetail.imgUrl}
-            {...actionCardDetail}
-          />
-        );
-      })}
+      <Image
+        src={valuesCover}
+        className={clsx("w-full h-[230px] object-cover rounded-[16px]")}
+        alt={"values-cover"}
+      ></Image>
+      <div className="mt-32">
+        {actionCardDetails.map((actionCardDetail, index) => {
+          return (
+            <ActionCards
+              key={index}
+              textFlag={index % 2 == 0}
+              src={actionCardDetail.imgUrl}
+              {...actionCardDetail}
+            />
+          );
+        })}
+      </div>
     </article>
   );
 }
