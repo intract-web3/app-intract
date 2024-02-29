@@ -6,12 +6,5 @@ export const Divider = ({
 }: {
   variant?: "light" | "dark";
 }) => {
-  return (
-    <hr
-      className={clsx(
-        dividerStyles.container,
-        dividerStyles[`variant-${variant}`]
-      )}
-    />
-  );
+  return <></>;
 };

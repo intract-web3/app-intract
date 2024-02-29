@@ -17,9 +17,10 @@
 .card_subheading {
     color: rgba(255, 255, 255, 0.40);
     text-shadow: 0px 2px 1px rgba(0, 0, 0, 0.10);
-    font-family: Outfit;
+    font-family: 'Outfit';
     font-size: 16px;
     font-style: normal;
+    margin-bottom: 20px;
     font-weight: 500;
     line-height: 20px; /* 125% */
     letter-spacing: 0.117px;
@@ -27,19 +28,29 @@
 .card {
     border-radius: 16px;
     border: 1px solid rgba(255, 255, 255, 0.10);
-    background: linear-gradient(108deg, #1E1E1E 2.39%, #171717 27.66%, #0E0E0E 98.74%), #6435E9;
+    max-height: 380px;
+    display: flex;
+    flex-direction: column ;
+    gap:0px;
+    background: linear-gradient(108deg, #1E1E1E 2.39%, #171717 27.66%, #0E0E0E 98.74%);
+}
+.card_inner {
+    display: flex;
+    position: absolute;
+    flex-direction: column;
+    gap:8px
 }
 
 @media screen and (max-width: 500px) {
     .card {
         padding: 10px;
+        position: relative;
     }
     .card_heading {
         color: #FFFFFF;
-        font-family: Outfit;
+        font-family: 'Outfit';
         font-size: 24px;
         text-align: start;
-        margin-bottom: 8px;
         font-style: normal;
         font-weight: 500;
         line-height: 24px; /* 120% */
@@ -48,7 +59,7 @@
     .card_subheading {
         color: rgba(255, 255, 255, 0.60);
         text-shadow: 0px 1px 1px rgba(0, 0, 0, 0.10);
-        font-family: Outfit;
+        font-family: 'Outfit';
         font-size: 16px;
         font-style: normal;
         font-weight: 500;

@@ -18,7 +18,7 @@ function BusinessLanding() {
         <Values />
         <PopularQuest />
         <Numbers />
-        <Image src={tear} alt="page-tear" />
+        <Image className="w-[100vw]" src={tear} alt="page-tear" />
         <Explorer />
         <FAQ />
       </div>

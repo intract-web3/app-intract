@@ -6,9 +6,11 @@ interface IActionCardsProps {
   textFlag: boolean;
   src: string;
   heading: string;
+  highlighted: string;
   description: string;
 }
 const ActionCards: FC<IActionCardsProps> = (props) => {
+  console.log(props.highlighted);
   return (
     <article
       className={clsx(
@@ -18,11 +20,14 @@ const ActionCards: FC<IActionCardsProps> = (props) => {
     >
       <section>
         <p className={actionStyles.heading}>{props.heading}</p>
-        <p className={actionStyles.description}>{props.description}</p>
+        <>
+          <span className={actionStyles.highlight}>{props.highlighted}</span>
+          <span className={actionStyles.description}>{props.description}</span>
+        </>
       </section>
       <Image
-        width={700}
-        height={400}
+        style={{ width: "100%", height: "100%" }}
+        className={actionStyles.image}
         src={props.src}
         alt={"action-card-image"}
       ></Image>

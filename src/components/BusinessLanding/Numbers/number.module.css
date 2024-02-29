@@ -1,8 +1,9 @@
 
+@import url('https://fonts.googleapis.com/css2?family=Outfit&display=swap');
 .single_number {
-    align-items: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
     padding: 16px;
-    display: flex;
 }
 .name {
     color: rgba(255, 255, 255, 0.40);
@@ -17,7 +18,7 @@
 }
 .number {
     text-shadow: 0px 0px 5px rgba(0, 0, 0, 0.10);
-    font-family: Outfit;
+    font-family: 'Outfit';
     font-size: 32px;
     font-style: normal;
     font-weight: 700;

@@ -3,18 +3,22 @@ import Image from "next/image";
 import { actionCardDetails } from "./utils";
 import valuesCover from "./assets/valuescover.svg";
 import ActionCards from "./ActionCards/ActionCards";
+import valuesstyle from "./values.module.css";
 import GenericLayout from "@/components/genericSection/genericHeadingLayout/GenericLayout";
 import clsx from "clsx";
 function Values() {
+  console.log(actionCardDetails);
   return (
     <article>
       <GenericLayout
         heading={"Values"}
         subheading={
           <div>
-            Enriching experiences, meaningful rewards, and empowering tools that
-            prioritize and <br /> enhance the journey of each individual
-            explorer within our platform
+            <span className={valuesstyle.highlighted}>
+              Enriching experiences, meaningful rewards, and empowering tools
+            </span>{" "}
+            that prioritize and enhance the journey of each individual explorer
+            within our platform
           </div>
         }
       />
