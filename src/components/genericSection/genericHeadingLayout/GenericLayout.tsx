@@ -10,7 +10,7 @@ const GenericLayout: FC<IGenericHeadingLayout> = (props) => {
   return (
     <article
       className={clsx(
-        "flex flex-col justify-center mb-[32px]",
+        "flex flex-col justify-center items-center mb-[32px]",
         props.className
       )}
     >

@@ -10,27 +10,28 @@ interface IActionCardsProps {
   description: string;
 }
 const ActionCards: FC<IActionCardsProps> = (props) => {
-  console.log(props.highlighted);
   return (
     <article
-      className={clsx(
-        `flex flex-col md:tracking-default`,
-        `${actionStyles.action_card}`
-      )}
+      className={
+        props.textFlag
+          ? actionStyles.action_card
+          : actionStyles.action_card_flip
+      }
     >
       <section>
         <p className={actionStyles.heading}>{props.heading}</p>
-        <>
+        <div className={actionStyles.suppported_text}>
           <span className={actionStyles.highlight}>{props.highlighted}</span>
           <span className={actionStyles.description}>{props.description}</span>
-        </>
+        </div>
       </section>
-      <Image
-        style={{ width: "100%", height: "100%" }}
-        className={actionStyles.image}
-        src={props.src}
-        alt={"action-card-image"}
-      ></Image>
+      <section>
+        <Image
+          className={actionStyles.image}
+          src={props.src}
+          alt={"action-card-image"}
+        ></Image>
+      </section>
     </article>
   );
 };

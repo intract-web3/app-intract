@@ -6,5 +6,5 @@ export const Divider = ({
 }: {
   variant?: "light" | "dark";
 }) => {
-  return <></>;
+  return <div className={dividerStyles.container}></div>;
 };

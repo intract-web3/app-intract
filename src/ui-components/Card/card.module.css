@@ -1,0 +1,36 @@
+.container {
+	width: 100%;
+	backdrop-filter: blur(10px);
+	display: flex;
+	height: 100%;
+	flex-direction: column;
+	gap: 0.5rem;
+	overflow: hidden;
+
+	border-radius: 16px;
+	border: 1px solid rgba(255, 255, 255, 0.07);
+	background: rgba(255, 255, 255, 0.07);
+}
+
+.container .actions_section {
+	padding: 0.75rem;
+	padding-top: 0;
+	position: relative;
+	margin-top: auto;
+	display: flex;
+	align-items: center;
+	gap: 1rem;
+}
+
+.container .content_section {
+	padding: 0rem 0.75rem;
+	margin-top: 0.5rem;
+	position: relative;
+	margin-bottom: 0.5rem;
+}
+
+.container .hero_section {
+	padding: 0.75rem;
+	padding-bottom: 0;
+	position: relative;
+}

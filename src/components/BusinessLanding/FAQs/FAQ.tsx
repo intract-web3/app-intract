@@ -13,14 +13,16 @@ function FAQ() {
     "How can I track my progress?",
   ];
   return (
-    <div className="min-h-[100vh] flex flex-col justify-between">
+    <div className=" mt-[96px] flex flex-col justify-between">
       <GenericLayout
         heading={"FAQ's"}
         subheading={<>Clarifying Your Quests – Answers to Common Inquiries</>}
       />
-      {FAQ.map((text, index) => (
-        <FAQcard key={index} text={text} />
-      ))}
+      <div>
+        {FAQ.map((text, index) => (
+          <FAQcard key={index} text={text} />
+        ))}
+      </div>
       <Divider />
     </div>
   );

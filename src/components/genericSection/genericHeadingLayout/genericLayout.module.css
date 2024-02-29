@@ -3,7 +3,7 @@
     color: rgba(255, 255, 255, 0.80);
     text-align: center;
     text-shadow: 0px 0px 5px rgba(0, 0, 0, 0.10);
-    font-family: Outfit;
+    font-family: 'Outfit';
     font-size: 24px;
     font-style: normal;
     font-weight: 600;
@@ -23,4 +23,31 @@
     line-height: 20px; /* 125% */
     letter-spacing: 0.117px;
     color: #FFFFFF66;
+}
+
+@media (min-width: 700px) {
+    .heading {
+        color: rgba(255, 255, 255, 0.80);
+        text-align: center;
+        text-shadow: 0px 0px 5px rgba(0, 0, 0, 0.10);
+        font-family: 'Outfit';
+        font-size: 48px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 60px; /* 125% */
+        letter-spacing: 0.117px;
+    }
+    .subheading {
+        color: rgba(255, 255, 255, 0.40);
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        text-shadow: 0px 0px 5px rgba(0, 0, 0, 0.10);
+        font-family: Outfit;
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 30px; /* 125% */
+        letter-spacing: 0.117px;
+    }
 }

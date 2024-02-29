@@ -9,11 +9,11 @@ import clsx from "clsx";
 function Values() {
   console.log(actionCardDetails);
   return (
-    <article>
+    <article className={clsx("flex flex-col justify-center", valuesstyle.main)}>
       <GenericLayout
         heading={"Values"}
         subheading={
-          <div>
+          <div className={valuesstyle.supported_main}>
             <span className={valuesstyle.highlighted}>
               Enriching experiences, meaningful rewards, and empowering tools
             </span>{" "}
@@ -22,11 +22,13 @@ function Values() {
           </div>
         }
       />
-      <Image
-        src={valuesCover}
-        className={clsx("w-full h-[230px] object-cover rounded-[16px]")}
-        alt={"values-cover"}
-      ></Image>
+      <div className={valuesstyle.image_style}>
+        <Image
+          src={valuesCover}
+          className={clsx("rounded-[16px]")}
+          alt={"values-cover"}
+        ></Image>
+      </div>
       <div className="mt-32">
         {actionCardDetails.map((actionCardDetail, index) => {
           return (

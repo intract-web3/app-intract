@@ -9,17 +9,23 @@ import tear from "./assets/tear.svg";
 import Image from "next/image";
 import Explorer from "./Explorer/Explorer";
 import FAQ from "./FAQs/FAQ";
+import { Divider } from "@/ui-components/divider/Divider";
 function BusinessLanding() {
   return (
     <div className={businessLandingStyles.container}>
       <div className={businessLandingStyles.businessLandingContainer}>
         <Explore />
+        <Divider />
         <OurProducts />
+        <Divider />
         <Values />
+        <Divider />
         <PopularQuest />
+        <Divider />
         <Numbers />
         <Image className="w-[100vw]" src={tear} alt="page-tear" />
         <Explorer />
+        <Divider />
         <FAQ />
       </div>
     </div>

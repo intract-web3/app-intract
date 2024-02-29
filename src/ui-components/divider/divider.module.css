@@ -1,14 +1,13 @@
 .container {
 	border-radius: 1000px;
-	position: relative;
-	width: 100%;
+	background: rgba(255, 255, 255, 0.15);
 	height: 1px;
 }
 
 .variant-light {
-	background: rgba(255, 255, 255, 0.10);
+	background: rgba(255, 255, 255, 0.15);
 }
 
 .variant-dark {
-	background: rgba(255, 255, 255, 0.10);
+	background: rgba(255, 255, 255, 0.15);
 }
