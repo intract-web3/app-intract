@@ -10,6 +10,7 @@ import Image from "next/image";
 import Explorer from "./Explorer/Explorer";
 import FAQ from "./FAQs/FAQ";
 import { Divider } from "@/ui-components/divider/Divider";
+import ExploreLast from "./ExploreLast/ExploreLast";
 function BusinessLanding() {
   return (
     <div className={businessLandingStyles.container}>
@@ -27,6 +28,7 @@ function BusinessLanding() {
         <Explorer />
         <Divider />
         <FAQ />
+        <ExploreLast />
       </div>
     </div>
   );

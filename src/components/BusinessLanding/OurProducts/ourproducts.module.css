@@ -26,16 +26,14 @@
 .card {
     border-radius: 16px;
     border: 1px solid rgba(255, 255, 255, 0.10);
-    max-height: 380px;
     display: flex;
     padding:16px;
-    flex-direction: column ;
+    flex-direction: column;
     gap:0px;
     background: linear-gradient(108deg, #1E1E1E 2.39%, #171717 27.66%, #0E0E0E 98.74%);
 }
 .card_inner {
     display: flex;
-    position: absolute;
     flex-direction: column;
     gap:8px
 }
@@ -44,6 +42,8 @@
     .card {
         padding: 10px;
         display: flex;
+        position: relative;
+        flex-direction: row;
     }
     .card_heading {
         text-shadow: 0px 1.5px 0px rgba(0, 0, 0, 0.50);
@@ -53,6 +53,11 @@
         font-weight: 500;
         line-height: 30px; /* 125% */
         letter-spacing: 0.117px;
+    }
+    .questing_image {
+        position: absolute;
+        width: 100%;
+      
     }
     .card_inner {
         padding: 40px;

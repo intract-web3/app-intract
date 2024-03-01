@@ -1,0 +1,36 @@
+.heading {
+    color: rgba(255, 255, 255, 0.80);
+    text-shadow: 0px 1px 0px #000;
+    font-family: Outfit;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 30px; /* 125% */
+    letter-spacing: 0.117px;
+}
+.subheading {
+    color: rgba(255, 255, 255, 0.40);
+    text-shadow: 0px 2px 1px rgba(0, 0, 0, 0.10);
+    font-family: Outfit;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 20px; /* 125% */
+    letter-spacing: 0.117px;
+}
+
+.sub_card {
+    padding: 48px;
+    border-radius: 16px;
+    border: 1px solid rgba(255, 255, 255, 0.10);
+    background: linear-gradient(108deg, #1E1E1E 2.39%, #171717 27.66%, #0E0E0E 98.74%);
+}
+
+@media (max-width:700px) {
+    .sub_card {
+        padding: 24px;
+        border-radius: 16px;
+        border: 1px solid rgba(255, 255, 255, 0.10);
+        background: linear-gradient(108deg, #1E1E1E 2.39%, #171717 27.66%, #0E0E0E 98.74%);
+    }
+}

@@ -18,6 +18,7 @@
     background-image: url('./assets/bgimg.svg');
     background-repeat: no-repeat;
     width: 100%;
+    padding: 48px;
     background-size: cover;
     height: 100%;
 }

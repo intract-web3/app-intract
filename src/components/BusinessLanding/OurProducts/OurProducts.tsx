@@ -6,6 +6,8 @@ import image from "../assets/Grids.png";
 import questing from "./assets/ourproduct1.svg";
 import clsx from "clsx";
 import { Divider } from "@/ui-components/divider/Divider";
+import SingleSubCard from "./SingleSubCard";
+import SubCards from "./SubCards";
 function OurProducts() {
   return (
     <div className={ourproductStyles.main}>
@@ -17,50 +19,38 @@ function OurProducts() {
           </>
         }
       />
-      <section className="grid grid-cols-1 gap-[16px] md:grid-cols-2">
-        <div className={clsx(ourproductStyles.card, "col-span-2 md:flex")}>
+      <section className="grid grid-cols-2 overflow-hidden gap-[16px]">
+        <div
+          className={clsx(ourproductStyles.card, "col-span-2 md:grid-cols-2")}
+        >
           <Image
             src={image}
             alt={""}
-            className={clsx("w-[100%]", ourproductStyles.image_1)}
+            className={clsx(
+              "w-full h-full absolute top-0 left-0 object-cover",
+              ourproductStyles.image_1
+            )}
           />
-          <article className={ourproductStyles.card_inner}>
+          <article
+            className={clsx(
+              ourproductStyles.card_inner,
+              "relative flex-1 flex-shrink-0 min-w-[50%]"
+            )}
+          >
             <div className={ourproductStyles.card_heading}>Questing</div>
             <span className={ourproductStyles.card_subheading}>
               Engage in a diverse range of quests tailored to your interests,
               unlocking opportunities for learning and earning rewards
             </span>
           </article>
-        </div>
-        <div
-          className={clsx(ourproductStyles.card, "col-span-2 md:col-span-1 ")}
-        >
-          <Image src={image} alt={""} className="relative" />
-          <div className={ourproductStyles.card_inner}>
-            <p className={ourproductStyles.card_heading}>Compass</p>
-            <span className={ourproductStyles.card_subheading}>
-              Explore quests of all projects, Navigate through your wallet
-              analytics and rise up the ladder.
-            </span>
-          </div>
-          {/* <Image src={questing} className="-m-5 p-0 top-[60%]" alt="" /> */}
-        </div>
-        <div
-          className={clsx(
-            ourproductStyles.card,
-            "col-span-2 overflow-hidden md:col-span-1"
-          )}
-        >
-          <Image src={image} alt={""} />
-          <div className={ourproductStyles.card_inner}>
-            <p className={ourproductStyles.card_heading}>Collections</p>
-            <span className={ourproductStyles.card_subheading}>
-              Discover Handpicked Adventures Curated for you
-            </span>
-          </div>
-          {/* <Image src={questing} className="top-[60%]" alt="" /> */}
+          <Image
+            src={questing}
+            alt="questing"
+            className={clsx("w-full relative")}
+          />
         </div>
       </section>
+      <SubCards />
       <Divider variant="dark" />
     </div>
   );
