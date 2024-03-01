@@ -4,6 +4,7 @@ import lightlines from "./assets/Lines.png";
 import Image from "next/image";
 import explorelast from "./explorelast.module.css";
 import clsx from "clsx";
+import ArrrowRightShort from "./assets/ArrowRightShort.png";
 import Button from "@/ui-components/button/Button";
 function ExploreLast() {
   return (
@@ -35,6 +36,7 @@ function ExploreLast() {
           explorelast.button
         )}
         name={"Enter Intract"}
+        hasImg
       ></Button>
       <Image src={lightlines} alt={""} />
     </div>
