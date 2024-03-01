@@ -2,6 +2,7 @@ import clsx from "clsx";
 import React, { FC } from "react";
 import Image from "next/image";
 import actionStyles from "./action.module.css";
+import { Divider } from "@/ui-components/divider/Divider";
 interface IActionCardsProps {
   textFlag: boolean;
   src: string;
@@ -12,15 +13,15 @@ interface IActionCardsProps {
 const ActionCards: FC<IActionCardsProps> = (props) => {
   return (
     <article
-      className={
+      className={clsx(
         props.textFlag
           ? actionStyles.action_card
           : actionStyles.action_card_flip
-      }
+      )}
     >
-      <section>
+      <section className={!props.textFlag ? actionStyles.text_right : ""}>
         <p className={actionStyles.heading}>{props.heading}</p>
-        <div className={actionStyles.suppported_text}>
+        <div className={props.textFlag ? actionStyles.suppported_text : ""}>
           <span className={actionStyles.highlight}>{props.highlighted}</span>
           <span className={actionStyles.description}>{props.description}</span>
         </div>

@@ -16,9 +16,7 @@ function SubCards() {
           image={subcard1}
         />
       </div>
-      <div
-        className={clsx("md:col-span-1  col-span-2 ", subcardstyle.sub_card)}
-      >
+      <div className={clsx("md:col-span-1  col-span-2", subcardstyle.sub_card)}>
         <SingleSubCard
           heading={"Collections"}
           substring={"Discover Handpicked Adventures Curated for you"}

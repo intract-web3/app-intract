@@ -9,9 +9,6 @@
     line-height: 24px; /* 120% */
     letter-spacing: 0.117px;
 }
-.main {
-    margin-top: 95px;
-}
 .card_subheading {
     color: rgba(255, 255, 255, 0.60);
     text-shadow: 0px 1px 1px rgba(0, 0, 0, 0.10);

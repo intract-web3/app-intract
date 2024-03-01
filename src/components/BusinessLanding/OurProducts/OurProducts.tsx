@@ -46,12 +46,12 @@ function OurProducts() {
           <Image
             src={questing}
             alt="questing"
-            className={clsx("w-full relative")}
+            className={clsx("w-full p-12 relative")}
           />
         </div>
       </section>
       <SubCards />
-      <Divider variant="dark" />
+      <Divider />
     </div>
   );
 }

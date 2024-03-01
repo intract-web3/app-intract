@@ -6,6 +6,7 @@ import ActionCards from "./ActionCards/ActionCards";
 import valuesstyle from "./values.module.css";
 import GenericLayout from "@/components/genericSection/genericHeadingLayout/GenericLayout";
 import clsx from "clsx";
+import { Divider } from "@/ui-components/divider/Divider";
 function Values() {
   console.log(actionCardDetails);
   return (
@@ -29,15 +30,17 @@ function Values() {
           alt={"values-cover"}
         ></Image>
       </div>
-      <div className="mt-32">
+      <div className="md:mt-32">
         {actionCardDetails.map((actionCardDetail, index) => {
           return (
-            <ActionCards
-              key={index}
-              textFlag={index % 2 == 0}
-              src={actionCardDetail.imgUrl}
-              {...actionCardDetail}
-            />
+            <>
+              <ActionCards
+                key={index}
+                textFlag={index % 2 == 0}
+                src={actionCardDetail.imgUrl}
+                {...actionCardDetail}
+              />
+            </>
           );
         })}
       </div>

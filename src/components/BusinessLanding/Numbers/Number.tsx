@@ -13,7 +13,7 @@ const Number: FC<INumberProps> = (props) => {
         <div className={numberStyles.name}>{props.name}</div>
         <span className={numberStyles.number}>{props.number}</span>
       </section>
-      <Divider />
+      <Divider distance={false} />
     </article>
   );
 };

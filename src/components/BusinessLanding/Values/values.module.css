@@ -13,13 +13,7 @@
     width: 100%;
     padding: 0px 24px;
 }
-.main {
-    margin-top: 10px;
-}
 @media (min-width: 700px) {
-    .main {
-        margin-top: 96px;
-    }
     .highlighted {
         color: rgba(255, 255, 255, 0.80);
         text-align: center;

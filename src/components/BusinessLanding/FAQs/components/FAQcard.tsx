@@ -1,25 +1,50 @@
-import React, { FC } from "react";
+import React, { FC, useState } from "react";
 import faqcard from "./faqcard.module.css";
-import addbuton from "./assets/addbutton.svg";
+import addbuton from "./assets/Add.svg";
 import Image from "next/image";
+import AnimateHeight from "react-animate-height";
+import FaqText from "./FaqText.tsx/FaqText";
+import clsx from "clsx";
 interface IFAQcard {
   text: string;
-  isOpen: boolean;
   index: number;
-  setOpen: (value: number) => void;
 }
 const FAQcard: FC<IFAQcard> = (props) => {
-  const { setOpen } = props;
+  const [open, setOpen] = useState(false);
+  const subtext = [
+    "To embark on your quest, simply connect your wallet, browse our collection of quests, and choose the one that aligns with your interests. Follow the on-screen instructions to get started on your exploration journey.",
+  ];
   return (
-    <article className={faqcard.faq_card}>
-      <div className={faqcard.faq_text}>{props.text}</div>
-      <Image
-        className="cursor-pointer"
-        src={addbuton}
-        alt={"add-button"}
-        onClick={() => setOpen(props.index)}
-      />
-    </article>
+    <>
+      <article className={faqcard.faq_card}>
+        <div className="flex items-center w-[100%] justify-between">
+          <div className={faqcard.faq_text}>{props.text}</div>
+          <div
+            onClick={() => setOpen(!open)}
+            className={clsx("cursor-pointer relative p-3.5", faqcard.button_bg)}
+          >
+            <Image className="absolute" src={addbuton} alt={"add-button"} />
+            <Image
+              className={
+                open
+                  ? "rotate-180 transition ease-in delay-10000 duration-10000 "
+                  : "rotate-90 transition ease-in delay-10000 duration-10000"
+              }
+              src={addbuton}
+              alt={"add-button"}
+            />
+          </div>
+        </div>
+        <AnimateHeight height={open ? 180 : 0} duration={300}>
+          <div className="flex flex-col">
+            <FaqText text={subtext[0]} />
+            <p className={clsx("mt-[24px]", faqcard.explore_more)}>
+              Explore More
+            </p>
+          </div>
+        </AnimateHeight>
+      </article>
+    </>
   );
 };
 

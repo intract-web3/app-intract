@@ -32,7 +32,7 @@ function ExploreLast() {
       </span>
       <Button
         className={clsx(
-          "flex justify-centerr relative max-w-[217px] border border-solid border-red items-center",
+          "flex justify-centerr relative max-w-[217px] items-center",
           explorelast.button
         )}
         name={"Enter Intract"}
