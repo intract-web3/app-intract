@@ -14,8 +14,8 @@ function Values() {
       <GenericLayout
         heading={"Values"}
         subheading={
-          <div className={valuesstyle.supported_main}>
-            <span className={valuesstyle.highlighted}>
+          <div className="md:max-w-[70vw]">
+            <span style={{ color: "rgba(255, 255, 255, 0.80)" }}>
               Enriching experiences, meaningful rewards, and empowering tools
             </span>{" "}
             that prioritize and enhance the journey of each individual explorer
@@ -26,7 +26,9 @@ function Values() {
       <div className={valuesstyle.image_style}>
         <Image
           src={valuesCover}
-          className={clsx("rounded-[16px]")}
+          className={clsx(
+            "rounded-[16px] xs:mt-[24px] w-full object-cover min-h-[230px] block "
+          )}
           alt={"values-cover"}
         ></Image>
       </div>
@@ -40,6 +42,7 @@ function Values() {
                 src={actionCardDetail.imgUrl}
                 {...actionCardDetail}
               />
+              <Divider className="md:my-24 xs:hidden md:block" />
             </>
           );
         })}

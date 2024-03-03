@@ -45,20 +45,19 @@ function Explorer() {
   ];
 
   return (
-    <div className="flex flex-col sm:mt-24 justify-between w-full">
+    <div className="flex flex-col justify-between w-full">
       <GenericLayout
         heading={"Hear What Our Explorers Say"}
         subheading={
-          <div className="mt-[8px]">
-            <span className={explorerstyles.highlighted}>
+          <div className="sm:max-w-[70%]">
+            <span style={{ color: "rgba(255, 255, 255, 0.80)" }}>
               Real Stories, Real Experiences –
             </span>
             <span>Our Users Share Their Quest Journeys</span>
           </div>
         }
       />
-      <div className="flex gap-[16px] w-full">
-        <div className="d-none d-sm-block"></div>
+      <div className="flex gap-[16px] sm:mt-[56px] xs:mt-[12px] w-full">
         <Swiper
           pagination={{ type: "bullets", clickable: true }}
           autoplay={true}
@@ -91,7 +90,7 @@ function Explorer() {
         </Swiper>
       </div>
 
-      <Divider />
+      {/* <Divider /> */}
     </div>
   );
 }

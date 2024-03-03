@@ -9,12 +9,7 @@
     line-height: 20px; /* 125% */
     letter-spacing: 0.117px;
 }
-.image_style {
-    width: 100%;
-}
-.main {
-    margin-top: 64px;
-}
+
 @media (min-width: 700px) {
     .highlighted {
         color: rgba(255, 255, 255, 0.80);
@@ -27,12 +22,11 @@
         line-height: 30px; /* 125% */
         letter-spacing: 0.117px;
     }
+    .card_style {
+        margin: 48px 0px;
+    }
     .supported_main {
         max-width: 65%;
-    }
-    .image_style {
-        display: flex;
-        justify-content: center;
     }
 
 }

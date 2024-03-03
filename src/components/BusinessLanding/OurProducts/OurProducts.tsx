@@ -10,7 +10,7 @@ import SingleSubCard from "./SingleSubCard";
 import SubCards from "./SubCards";
 function OurProducts() {
   return (
-    <div className={ourproductStyles.main}>
+    <div>
       <GenericLayout
         heading={"Our Products"}
         subheading={
@@ -19,7 +19,7 @@ function OurProducts() {
           </>
         }
       />
-      <section className="grid grid-cols-2 overflow-hidden gap-[16px]">
+      <section className="grid grid-cols-2 overflow-hidden ">
         <div
           className={clsx(ourproductStyles.card, "col-span-2 md:grid-cols-2")}
         >
@@ -51,7 +51,6 @@ function OurProducts() {
         </div>
       </section>
       <SubCards />
-      <Divider />
     </div>
   );
 }

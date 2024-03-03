@@ -16,18 +16,18 @@ function BusinessLanding() {
     <div className={businessLandingStyles.container}>
       <div className={businessLandingStyles.businessLandingContainer}>
         <Explore />
-        <Divider />
+        <Divider className="md:my-24 xs:my-48" />
         <OurProducts />
-        <Divider />
+        <Divider className="md:my-24 xs:my-48" />
         <Values />
-        <Divider />
         <PopularQuest />
-        <Divider />
+        <Divider className="md:my-24 xs:my-48" />
         <Numbers />
-        {/* s */}
+        <Divider className="md:my-24 xs:my-48" />
         <Explorer />
-        <Divider />
+        <Divider className="md:my-24 xs:my-48" />
         <FAQ />
+        <Divider className="md:my-24 xs:my-48" />
         <ExploreLast />
       </div>
     </div>

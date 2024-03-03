@@ -4,13 +4,5 @@
 	height: 1px;
 }
 @media (min-width:1000px) {
-	.container {
-		margin: 95px 0px 95px 0px;
-	}
-	.container_false {
-		border-radius: 1000px;
-		background: rgba(255, 255, 255, 0.15);
-		height: 1px;
-		margin: 40px 0px 0px 0px;
-	}
+	
 } 

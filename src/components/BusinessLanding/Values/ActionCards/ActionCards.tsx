@@ -17,25 +17,29 @@ const ActionCards: FC<IActionCardsProps> = (props) => {
         props.textFlag
           ? actionStyles.action_card
           : actionStyles.action_card_flip,
-        actionStyles.action_card_addded
+        actionStyles.action_card_addded,
+        "xs:my-32"
       )}
     >
-      <section className={!props.textFlag ? actionStyles.text_right : ""}>
+      <section className={!props.textFlag ? actionStyles.firstItem : ""}>
         <p className={actionStyles.heading}>{props.heading}</p>
         <div
-          className={
+          className={clsx(
             props.textFlag
               ? actionStyles.suppported_text
-              : actionStyles.suppported_text_flag
-          }
+              : actionStyles.suppported_text_flag,
+            "xs:mt-[8px]"
+          )}
         >
           <span className={actionStyles.highlight}>{props.highlighted}</span>
           <span className={actionStyles.description}>{props.description}</span>
         </div>
       </section>
-      <section>
+      <section className={actionStyles.secondItem}>
         <Image
-          className={actionStyles.image}
+          className={
+            "w-full xs:mt-[24px] lg:mt-0 h-[300px] object-cover rounded-[16px]"
+          }
           src={props.src}
           alt={"action-card-image"}
         ></Image>
