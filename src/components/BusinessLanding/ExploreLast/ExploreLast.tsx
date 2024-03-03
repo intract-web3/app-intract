@@ -8,42 +8,44 @@ import ArrrowRightShort from "./assets/ArrowRightShort.png";
 import Button from "@/ui-components/button/Button";
 function ExploreLast() {
   return (
-    <div
-      className={clsx(
-        "flex flex-col relative justify-center",
-        explorelast.main
-      )}
-    >
-      <Image
-        src={img}
-        className="w-full h-full absolute top-0 left-0 object-fit"
-        alt="explore-image"
-      />
-      <span
+    <div className="flex flex-col justify-center items-center ">
+      <div
         className={clsx(
-          "flex justify-center items-center relative",
-          explorelast.explore_text
+          "flex flex-col relative justify-center",
+          explorelast.main
         )}
       >
-        Explore
-      </span>
-      <span
-        className={clsx(
-          "flex justify-center relative items-center",
-          explorelast.now_text
-        )}
-      >
-        Now
-      </span>
-      <Button
-        className={clsx(
-          "flex justify-centerr relative max-w-[217px] items-center",
-          explorelast.button
-        )}
-        name={"Enter Intract"}
-        hasImg
-      ></Button>
-      <Image src={lightlines} alt={""} />
+        <Image
+          src={img}
+          className="min-w-full h-full absolute top-0 left-0 object-fit"
+          alt="explore-image"
+        />
+        <span
+          className={clsx(
+            "flex justify-center items-center relative",
+            explorelast.explore_text
+          )}
+        >
+          Explore
+        </span>
+        <span
+          className={clsx(
+            "flex justify-center relative items-center",
+            explorelast.now_text
+          )}
+        >
+          Now
+        </span>
+        <Button
+          className={clsx(
+            "flex justify-centerr relative max-w-[217px] items-center",
+            explorelast.button
+          )}
+          name={"Enter Intract"}
+          hasImg
+        ></Button>
+      </div>
+      <Image src={lightlines} className="h-full" alt={""} />
     </div>
   );
 }

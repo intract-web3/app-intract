@@ -14,9 +14,9 @@ function OurProducts() {
       <GenericLayout
         heading={"Our Products"}
         subheading={
-          <>
+          <div className="md:mb-[56px] xs:mb-[32px]">
             Discover Top-Tier Products That Enhance <br /> Your Quest Experience
-          </>
+          </div>
         }
       />
       <section className="grid grid-cols-2 overflow-hidden ">

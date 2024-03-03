@@ -38,7 +38,7 @@ const ActionCards: FC<IActionCardsProps> = (props) => {
       <section className={actionStyles.secondItem}>
         <Image
           className={
-            "w-full xs:mt-[24px] lg:mt-0 h-[300px] object-cover rounded-[16px]"
+            "w-full xs:mt-[24px] lg:mt-0 min-h-[300px] object-cover rounded-[16px]"
           }
           src={props.src}
           alt={"action-card-image"}

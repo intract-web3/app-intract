@@ -16,13 +16,17 @@ const FAQcard: FC<IFAQcard> = (props) => {
   ];
   return (
     <>
-      <article
-        className={clsx(faqcard.faq_card, "cursor-pointer")}
-        onClick={() => setOpen(!open)}
-      >
+      <article className={faqcard.faq_card}>
         <div className="flex items-center w-full justify-between">
-          <div className={faqcard.faq_text}>{props.text}</div>
-          <div className={clsx("cursor-pointer relative", faqcard.button_bg)}>
+          <div
+            className={faqcard.faq_text && (!open ? "text-[#FFFFFFCC]" : "")}
+          >
+            {props.text}
+          </div>
+          <div
+            onClick={() => setOpen(!open)}
+            className={clsx("cursor-pointer relative p-3.5", faqcard.button_bg)}
+          >
             <Image className="absolute" src={addbuton} alt={"add-button"} />
             <Image
               className={
@@ -35,14 +39,13 @@ const FAQcard: FC<IFAQcard> = (props) => {
             />
           </div>
         </div>
-        <AnimateHeight height={open ? "auto" : 0} duration={500}>
-          hello
-          {/* <div className="flex flex-col">
+        <AnimateHeight height={open ? 180 : 0} duration={300}>
+          <div className="flex flex-col">
             <FaqText text={subtext[0]} />
             <p className={clsx("mt-[24px]", faqcard.explore_more)}>
               Explore More
             </p>
-          </div> */}
+          </div>
         </AnimateHeight>
       </article>
     </>

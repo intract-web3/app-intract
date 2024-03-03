@@ -11,7 +11,7 @@ function Explore() {
     <div className={styles.exploreSection}>
       <div className={styles.content}>
         <h1 className={styles.headline}>
-          Explore, Learn <br /> and Earn
+          Explore, Learn <br /> and <i> Earn</i>
         </h1>
         <p className={styles.description}>
           Embark on a Journey of Discovery and <br /> Earnings with Our Quest

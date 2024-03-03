@@ -11,6 +11,11 @@
 }
 
 @media (min-width:700px) {
+    /* .bgimg {
+        background-image: url('./assets/grid.png');
+        height: 100;
+        border:1px solid red
+    } */
     .highlighted {
         color: rgba(255, 255, 255, 0.80);
         text-align: center;

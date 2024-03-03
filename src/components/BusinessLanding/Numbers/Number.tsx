@@ -5,6 +5,7 @@ import { Divider } from "@/ui-components/divider/Divider";
 interface INumberProps {
   name: string;
   number: string;
+  isLast: boolean;
 }
 const Number: FC<INumberProps> = (props) => {
   return (
@@ -13,6 +14,7 @@ const Number: FC<INumberProps> = (props) => {
         <div className={numberStyles.name}>{props.name}</div>
         <span className={numberStyles.number}>{props.number}</span>
       </section>
+      {!props.isLast && <Divider />}
     </article>
   );
 };

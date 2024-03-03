@@ -21,9 +21,15 @@ function Numbers() {
     },
   ];
   return (
-    <div>
+    <div className="xs:mt-20 w-full">
       {numbersList.map((number, index) => {
-        return <Number name={number.name} number={number.numbers} />;
+        return (
+          <Number
+            name={number.name}
+            number={number.numbers}
+            isLast={numbersList.length - 1 == index}
+          />
+        );
       })}
     </div>
   );

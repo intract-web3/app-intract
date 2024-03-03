@@ -4,6 +4,9 @@
     align-items: center;
     padding: 48px;
 }
+.businessLandingContainer .tearContainer {
+    width: 100vw;
+}
 
 @media screen and (max-width: 500px) {
     .container {
