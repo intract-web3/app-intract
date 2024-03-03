@@ -16,11 +16,13 @@ const FAQcard: FC<IFAQcard> = (props) => {
   ];
   return (
     <>
-      <article className={faqcard.faq_card}>
-        <div className="flex items-center w-[100%] justify-between">
+      <article
+        className={clsx(faqcard.faq_card, "cursor-pointer ")}
+        onClick={() => setOpen(!open)}
+      >
+        <div className="flex items-center w-full justify-between">
           <div className={faqcard.faq_text}>{props.text}</div>
           <div
-            onClick={() => setOpen(!open)}
             className={clsx("cursor-pointer relative p-3.5", faqcard.button_bg)}
           >
             <Image className="absolute" src={addbuton} alt={"add-button"} />

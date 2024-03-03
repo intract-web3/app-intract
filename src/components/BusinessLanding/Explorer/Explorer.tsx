@@ -45,7 +45,7 @@ function Explorer() {
   ];
 
   return (
-    <div className="flex flex-col justify-between w-full">
+    <div className="flex flex-col sm:mt-24 justify-between w-full">
       <GenericLayout
         heading={"Hear What Our Explorers Say"}
         subheading={
@@ -65,8 +65,20 @@ function Explorer() {
           loop={true}
           modules={[Autoplay]}
           breakpoints={{
-            0: {
+            1300: {
               slidesPerView: 4,
+              spaceBetween: 16,
+            },
+            1000: {
+              slidesPerView: 3,
+              spaceBetween: 16,
+            },
+            700: {
+              slidesPerView: 2,
+              spaceBetween: 16,
+            },
+            0: {
+              slidesPerView: 1,
               spaceBetween: 16,
             },
           }}

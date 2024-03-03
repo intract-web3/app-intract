@@ -8,7 +8,12 @@ import ArrrowRightShort from "./assets/ArrowRightShort.png";
 import Button from "@/ui-components/button/Button";
 function ExploreLast() {
   return (
-    <div className="flex flex-col relative justify-center">
+    <div
+      className={clsx(
+        "flex flex-col relative justify-center",
+        explorelast.main
+      )}
+    >
       <Image
         src={img}
         className="w-full h-full absolute top-0 left-0 object-fit"

@@ -16,12 +16,19 @@ const ActionCards: FC<IActionCardsProps> = (props) => {
       className={clsx(
         props.textFlag
           ? actionStyles.action_card
-          : actionStyles.action_card_flip
+          : actionStyles.action_card_flip,
+        actionStyles.action_card_addded
       )}
     >
       <section className={!props.textFlag ? actionStyles.text_right : ""}>
         <p className={actionStyles.heading}>{props.heading}</p>
-        <div className={props.textFlag ? actionStyles.suppported_text : ""}>
+        <div
+          className={
+            props.textFlag
+              ? actionStyles.suppported_text
+              : actionStyles.suppported_text_flag
+          }
+        >
           <span className={actionStyles.highlight}>{props.highlighted}</span>
           <span className={actionStyles.description}>{props.description}</span>
         </div>

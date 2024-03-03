@@ -30,7 +30,7 @@ function Values() {
           alt={"values-cover"}
         ></Image>
       </div>
-      <div className="md:mt-32">
+      <div className={valuesstyle.card_style}>
         {actionCardDetails.map((actionCardDetail, index) => {
           return (
             <>

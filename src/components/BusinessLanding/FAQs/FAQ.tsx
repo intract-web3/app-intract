@@ -24,7 +24,7 @@ function FAQ() {
     },
   ];
   return (
-    <div className=" mt-[96px] flex flex-col justify-between">
+    <div className="mt-[96px] flex flex-col justify-between">
       <GenericLayout
         heading={"FAQ's"}
         subheading={<>Clarifying Your Quests – Answers to Common Inquiries</>}
@@ -32,7 +32,9 @@ function FAQ() {
       <div>
         <div className="row g-4 mb-5">
           {FAQ.map((faq, index) => (
-            <FAQcard key={index} index={index} text={faq.text} />
+            <div>
+              <FAQcard key={index} index={index} text={faq.text} />
+            </div>
           ))}
         </div>
       </div>

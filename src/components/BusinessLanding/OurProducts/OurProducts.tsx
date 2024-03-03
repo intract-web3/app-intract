@@ -46,7 +46,7 @@ function OurProducts() {
           <Image
             src={questing}
             alt="questing"
-            className={clsx("w-full p-12 relative")}
+            className="w-full h-auto xs:w-full xs:mt-12 md:w-1/2 lg:w-1/2 xl:w-1/2 md:p-12 sm:mt-12 md:mt-0 relative"
           />
         </div>
       </section>

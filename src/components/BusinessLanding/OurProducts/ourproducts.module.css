@@ -16,7 +16,6 @@
     font-size: 16px;
     font-style: normal;
     font-weight: 500;
-    max-width: 70%;
     line-height: 20px; /* 125% */
     letter-spacing: 0.117px;
 }
@@ -35,7 +34,7 @@
     gap:8px
 }
 
-@media (min-width: 700px) {
+@media (min-width: 742px) {
     .card {
         padding: 10px;
         display: flex;

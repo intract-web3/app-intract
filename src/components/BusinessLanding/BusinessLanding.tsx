@@ -24,7 +24,7 @@ function BusinessLanding() {
         <PopularQuest />
         <Divider />
         <Numbers />
-        <Image className="w-[100vw]" src={tear} alt="page-tear" />
+        {/* s */}
         <Explorer />
         <Divider />
         <FAQ />
