@@ -10,24 +10,6 @@ import clsx from "clsx";
 import axios from "axios";
 
 export const MoreQuests = () => {
-  //   const [data, setData] = useState([]);
-  //   async function apiData() {
-  //     const data = await axios
-  //       .get(
-  //         "https://api.intract.io/api/qv1/homepage/trending?featureFlag=DEFAULT",
-  //         { crossdomain: true }
-  //       )
-  //       .then((result) => {
-  //         console.log("result", result);
-  //       })
-  //       .catch((error) => {
-  //         console.log("Error", error);
-  //       });
-  //     setData(data.data);
-  //   }
-  //   useEffect(() => {
-  //     apiData();
-  //   }, []);
   const data = [
     {
       _id: "65dee9a5062fd8f67f35f820",

@@ -1,4 +1,3 @@
-"use client";
 import GenericLayout from "@/components/genericSection/genericHeadingLayout/GenericLayout";
 import Button from "@/ui-components/button/Button";
 import React from "react";
@@ -6,7 +5,6 @@ import popularqueststyles from "./popularquest.module.css";
 import { Card } from "@/ui-components/Card/Card";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
-import { usePopularQuests } from "./hooks/usePopularQuestHook";
 import { HomeCard } from "./HomeCard/HomeCard";
 import { HeroVariant5 } from "./HomeCard/components/HeroVariant5/HeroVariant5";
 import { SectionContainer } from "./sectionContainer/SectionContainer";
@@ -22,7 +20,7 @@ function PopularQuest() {
       )}
     >
       <GenericLayout heading={"Popular Quests"} className="md:mb-10" />
-      <MoreQuests />
+      {/* <MoreQuests /> */}
       <Button
         className={clsx(
           popularqueststyles.button_discover_more,

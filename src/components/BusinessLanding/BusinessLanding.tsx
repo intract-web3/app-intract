@@ -1,3 +1,4 @@
+"use client";
 import React from "react";
 import businessLandingStyles from "./businessLanding.module.css";
 import Explore from "./ExploreSection/Explore";
@@ -21,14 +22,11 @@ function BusinessLanding() {
       <OurProducts />
       <Divider className="md:my-24 xs:my-[64px]" />
       <Values />
-      {/* <Divider className="md:my-24 xs:my-[64px]" /> */}
       <PopularQuest />
       <Divider className="md:my-12 xs:my-[64px]" />
       <Users />
       <Numbers />
-
       <Image src={tear} alt="Tear" className="w-full" />
-
       <Explorer />
       <Divider className="md:my-12 xs:my-[64px]" />
       <FAQ />
