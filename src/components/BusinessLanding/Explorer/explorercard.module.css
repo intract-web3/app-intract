@@ -1,10 +1,11 @@
 .explorercss {
-    height: 400px;
+    height: auto;
     width: 100%;
     border-radius: 16px;
     border: 1px solid rgba(255, 255, 255, 0.07);
     background: #121212;
     overflow: hidden;
+    padding: 12px;
 }
 
 .heading {
@@ -83,6 +84,9 @@
 
 .bend {
     position: absolute;
+    width: 100%;
+    margin-top: -1rem;
+    margin-left: 1rem;
 }
 @media (min-width:700px) {
     .highlighted {

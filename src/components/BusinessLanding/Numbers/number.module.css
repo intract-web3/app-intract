@@ -3,7 +3,7 @@
 .single_number {
     display: grid;
     grid-template-columns: 2fr 1fr;
-    padding: 16px;
+    padding: 16px 0px;
 }
 .name {
     color: rgba(255, 255, 255, 0.40);
@@ -38,7 +38,6 @@
 }
 .numbers_main {
     width: 100%;
-    padding:0px 16px ;
 }
 
 @media (min-width:700px) {
@@ -54,6 +53,11 @@
         background-clip: text;
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
+    }
+    .single_number {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        padding: 16px 0px;
     }
     .name {
         color: rgba(255, 255, 255, 0.40);

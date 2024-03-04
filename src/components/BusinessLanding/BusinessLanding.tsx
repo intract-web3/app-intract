@@ -23,16 +23,16 @@ function BusinessLanding() {
         <Values />
         {/* <Divider className="md:my-24 xs:my-[64px]" /> */}
         <PopularQuest />
-        <Divider className="md:my-24 xs:my-[64px]" />
+        <Divider className="md:my-12 xs:my-[64px]" />
         {/* <Users /> */}
         <Numbers />
         <div className={businessLandingStyles.tearContainer}>
           <Image src={tear} alt="Tear" />
         </div>
         <Explorer />
-        <Divider className="md:my-24 xs:my-[64px]" />
+        <Divider />
         <FAQ />
-        <Divider className="md:my-24 xs:my-[64px]" />
+        <Divider />
         <ExploreLast />
       </div>
     </div>

@@ -25,6 +25,9 @@
     border: 1px solid rgba(255, 255, 255, 0.10);
     background: linear-gradient(108deg, #1E1E1E 2.39%, #171717 27.66%, #0E0E0E 98.74%);
 }
+.sub_card .img {
+    padding: 0
+}
 .heading_main {
     display: grid;
 }

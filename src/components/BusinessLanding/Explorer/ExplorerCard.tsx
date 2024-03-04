@@ -13,10 +13,10 @@ const Profile = ({
   designation: string;
 }) => {
   return (
-    <article className="flex gap-[32px] ml-[16px]">
+    <article className="gap-[32px] flex justify-start ml-2">
       <Image
         src={imgUrl}
-        className="rounded-full w-22 h-22 "
+        className="rounded-full w-22 h-22"
         alt={"profile-image"}
       ></Image>
       <div className="flex flex-col">
@@ -43,9 +43,9 @@ function ExplorerCard() {
           </span>
         </span>
       </div>
-      <div className={explorercss.bend}>
-        {/* <Image src={bend} alt="bend" /> */}
-      </div>
+      {/* <div className={explorercss.bend}>
+        <Image src={bend} alt="bend" />
+      </div> */}
       <Profile
         imgUrl={profile}
         name={"Manoj Kumar"}

@@ -23,7 +23,7 @@ const SingleSubCard: FC<ISingleSubCard> = (props) => {
           {props.substring}
         </span>
       </div>
-      <div className="md:mt-3">
+      <div className={clsx("xs:mt-3", singlesubcard.img)}>
         <Image src={props.image} className="col-span-2" alt={"subcard"}></Image>
       </div>
     </div>
