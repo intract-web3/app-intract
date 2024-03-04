@@ -20,7 +20,7 @@ function PopularQuest() {
       )}
     >
       <GenericLayout heading={"Popular Quests"} className="md:mb-10" />
-      {/* <MoreQuests /> */}
+      <MoreQuests />
       <Button
         className={clsx(
           popularqueststyles.button_discover_more,
