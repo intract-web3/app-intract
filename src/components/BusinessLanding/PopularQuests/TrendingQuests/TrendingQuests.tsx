@@ -523,6 +523,7 @@ export const MoreQuests = () => {
         >
           {data.map((data, index) => (
             <SwiperSlide
+              key={index}
               style={{
                 height: "auto",
               }}

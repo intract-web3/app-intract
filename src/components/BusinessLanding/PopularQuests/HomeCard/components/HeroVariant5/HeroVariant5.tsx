@@ -29,7 +29,7 @@ export const HeroVariant5 = ({
 
   const randomNo = useMemo(() => {
     return Math.floor((order + 1) % 4);
-  }, []);
+  }, [order]);
 
   return (
     <div
@@ -42,7 +42,7 @@ export const HeroVariant5 = ({
         <Image src={gridPng} alt="grid" />
 
         <div>
-          <img src={banner} alt="banner" />
+          <Image src={banner} alt="banner" />
         </div>
       </div>
 

@@ -2,7 +2,7 @@ import rewardBadgeStyles from "./rewardBadge.module.css";
 import { useMemo } from "react";
 import gemsPng from "../../assets/gemstone.png";
 import xpsSvg from "../../assets/xps.png";
-
+import Image from "next/image";
 export const RewardBadge = ({
   children,
   type = "custom",
@@ -24,7 +24,7 @@ export const RewardBadge = ({
 
   return (
     <div className={rewardBadgeStyles.container}>
-      {icon ? icon : <img src={resolveUrl} height="15px" />}
+      {icon ? icon : <Image src={resolveUrl} alt="resolver" height="15" />}
       {children}
     </div>
   );

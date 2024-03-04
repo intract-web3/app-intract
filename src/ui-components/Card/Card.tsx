@@ -1,9 +1,7 @@
 import clsx from "clsx";
 import cardStyles from "./card.module.css";
 import {
-  Attributes,
   ForwardRefExoticComponent,
-  FunctionComponent,
   HTMLAttributes,
   ReactNode,
   forwardRef,
@@ -11,9 +9,15 @@ import {
 
 interface ICard
   extends ForwardRefExoticComponent<HTMLAttributes<HTMLDivElement>> {
-  Content?: FunctionComponent<{ children: ReactNode; className?: string }>;
-  Actions?: FunctionComponent<{ children: ReactNode; className?: string }>;
-  Hero?: FunctionComponent<{ children: ReactNode; className?: string }>;
+  Content?: React.FunctionComponent<{
+    children: ReactNode;
+    className?: string;
+  }>;
+  Actions?: React.FunctionComponent<{
+    children: ReactNode;
+    className?: string;
+  }>;
+  Hero?: React.FunctionComponent<{ children: ReactNode; className?: string }>;
 }
 
 export const Card: ICard = forwardRef<
@@ -26,8 +30,9 @@ export const Card: ICard = forwardRef<
     </div>
   );
 });
+Card.displayName = "Card";
 
-const CardHero: FunctionComponent<{
+const CardHero: React.FunctionComponent<{
   children: ReactNode;
   className?: string;
 }> = ({ children, className }) => {
@@ -35,8 +40,9 @@ const CardHero: FunctionComponent<{
     <div className={clsx(cardStyles.hero_section, className)}>{children}</div>
   );
 };
+CardHero.displayName = "CardHero";
 
-const CardContent: FunctionComponent<{
+const CardContent: React.FunctionComponent<{
   children: ReactNode;
   className?: string;
 }> = ({ children, className }) => {
@@ -46,8 +52,9 @@ const CardContent: FunctionComponent<{
     </div>
   );
 };
+CardContent.displayName = "CardContent";
 
-const CardActions: FunctionComponent<{
+const CardActions: React.FunctionComponent<{
   children: ReactNode;
   className?: string;
 }> = ({ children, className }) => {
@@ -57,6 +64,7 @@ const CardActions: FunctionComponent<{
     </div>
   );
 };
+CardActions.displayName = "CardActions";
 
 Card.Content = CardContent;
 Card.Actions = CardActions;

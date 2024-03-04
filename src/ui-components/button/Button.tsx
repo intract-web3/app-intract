@@ -4,7 +4,7 @@ import React, { FC } from "react";
 import style from "./button.module.css";
 import ArrowImage from "../../components/BusinessLanding/assets/rightarrow.svg";
 import { Outfit } from "next/font/google";
-
+import Image from "next/image";
 const outfit = Outfit({ subsets: ["latin"] });
 
 interface IButtonProps {
@@ -26,7 +26,7 @@ const Button: FC<IButtonProps> = (props) => {
       {props.hasImg && (
         <div>
           {" "}
-          <img src={ArrowImage} alt="" />{" "}
+          <Image src={ArrowImage} alt="" />{" "}
         </div>
       )}
     </div>

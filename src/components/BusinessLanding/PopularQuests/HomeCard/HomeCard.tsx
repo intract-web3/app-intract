@@ -8,6 +8,7 @@ import cardStyles from "../_atoms/Card/card.module.css";
 // import { TrackingProviderEventsEnum, useTracking } from '@/context/TrackingProvider';
 import { RewardBadge } from "../_atoms/RewardBadge/RewardBadge";
 import clsx from "clsx";
+import Image from "next/image";
 import { Link } from "react-router-dom";
 import homeCardStyles from "./homeCard.module.css";
 
@@ -97,7 +98,7 @@ export function HomeCard({
     // 	});
     // }
     return rewards;
-  }, [reward, xps, numTasks]);
+  }, [xps, numTasks]);
 
   const isMarqueeEligible = formattedRewards.length > 1;
   const navigationUrl = link || `/quest/${_id}`;
@@ -123,7 +124,7 @@ export function HomeCard({
         <div className={homeCardStyles.content_section}>
           {projectName && (
             <div>
-              {projectLogo ? <img src={projectLogo} alt={name} /> : null}
+              {projectLogo ? <Image src={projectLogo} alt={name} /> : null}
               <span>{projectName}</span>
             </div>
           )}
@@ -150,9 +151,11 @@ export function HomeCard({
                       gap: "0.5rem",
                     }}
                   >
-                    {formattedRewards.map((i) => (
+                    {formattedRewards.map((i, index) => (
                       //   <>{i.label}</>
-                      <RewardBadge>{i.label}</RewardBadge>
+                      <div key={index}>
+                        <RewardBadge>{i.label}</RewardBadge>
+                      </div>
                     ))}
                   </div>
                 </Marquee>
@@ -164,9 +167,10 @@ export function HomeCard({
                     gap: "0.5rem",
                   }}
                 >
-                  {formattedRewards.map((i) => (
-                    // <>{i.label}</>
-                    <RewardBadge>{i.label}</RewardBadge>
+                  {formattedRewards.map((i, index) => (
+                    <div key={index}>
+                      <RewardBadge>{i.label}</RewardBadge>
+                    </div>
                   ))}
                 </div>
               )}
@@ -191,9 +195,10 @@ export function HomeCard({
                     gap: "0.5rem",
                   }}
                 >
-                  {formattedRewards.map((i) => (
-                    // <>{i.label}</>
-                    <RewardBadge>{i.label}</RewardBadge>
+                  {formattedRewards.map((i, index) => (
+                    <div key={index}>
+                      <RewardBadge>{i.label}</RewardBadge>
+                    </div>
                   ))}
                 </div>
               </Marquee>
@@ -206,9 +211,10 @@ export function HomeCard({
                   width: "100%",
                 }}
               >
-                {formattedRewards.map((i) => (
-                  //   <>{i.label}</>
-                  <RewardBadge>{i.label}</RewardBadge>
+                {formattedRewards.map((i, index) => (
+                  <div key={index}>
+                    <RewardBadge>{i.label}</RewardBadge>
+                  </div>
                 ))}
               </div>
             )}
