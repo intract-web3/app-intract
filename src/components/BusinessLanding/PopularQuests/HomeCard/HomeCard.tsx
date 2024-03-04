@@ -108,7 +108,7 @@ export function HomeCard({
         if ((e.target as any).getAttribute("data-id") === "bookmark-quest")
           e.preventDefault();
       }}
-      to={navigationUrl}
+      to={""}
     >
       <Card
         style={{
