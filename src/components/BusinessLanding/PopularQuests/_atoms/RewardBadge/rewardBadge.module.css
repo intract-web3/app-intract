@@ -1,0 +1,20 @@
+.container {
+	display: inline-flex;
+	height: 32px;
+	padding: 8px 12px;
+	justify-content: center;
+	align-items: flex-start;
+	gap: 6px;
+	flex-shrink: 0;
+
+	border-radius: 1000px;
+	border: 0.5px solid rgba(255, 255, 255, 0.07);
+	background: rgba(255, 255, 255, 0.07);
+
+	color: #fff;
+	font-family: 'Outfit';
+	font-size: 14px;
+	font-style: normal;
+	font-weight: 500;
+	line-height: 16px; /* 114.286% */
+}

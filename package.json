@@ -6,14 +6,19 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "proxy": "https://api.intract.io/api/qv1/homepage/trending?featureFlag=DEFAULT"
   },
   "dependencies": {
+    "@tanstack/react-query": "^5.24.8",
+    "axios": "^1.6.7",
     "clsx": "^2.1.0",
     "next": "14.1.0",
     "react": "^18",
     "react-animate-height": "^3.2.3",
     "react-dom": "^18",
+    "react-fast-marquee": "^1.6.4",
+    "react-router-dom": "^6.22.2",
     "swiper": "8"
   },
   "devDependencies": {

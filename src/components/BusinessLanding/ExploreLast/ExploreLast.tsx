@@ -42,7 +42,7 @@ function ExploreLast() {
             explorelast.button
           )}
           name={"Enter Intract"}
-          hasImg
+          hasImg={true}
         ></Button>
       </div>
       <Image src={lightlines} className="h-full w-full" alt={""} />

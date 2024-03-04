@@ -1,0 +1,91 @@
+.container {
+	position: relative;
+	transition: all 0.2s ease-in-out;
+	width: 324px;
+	max-height: 443px;
+	padding: 16px;
+	border-radius: 16px;
+}
+
+.container:hover {
+	background: rgba(255, 255, 255, 0.12);
+	border: 1px solid rgba(255, 255, 255, 0.12);
+}
+
+.content_section {
+	display: flex;
+	flex-direction: column;
+	gap: 0.5rem;
+}
+
+.content_section > div {
+	display: flex;
+	gap: 0.25rem;
+	align-items: center;
+}
+
+.content_section > div > img {
+	border-radius: 1000px;
+	box-shadow: 0px 0.3px 1px 0px rgba(255, 255, 255, 0.25) inset,
+		0px -0.3px 1px 0px rgba(255, 255, 255, 0.25) inset;
+	width: 20px;
+	height: 20px;
+	flex-shrink: 0;
+	object-fit: cover;
+}
+
+.content_section > div > span {
+	color: #FFF;
+font-family: Outfit;
+font-size: 20px;
+font-style: normal;
+font-weight: 600;
+line-height: 24px; /* 120% */
+letter-spacing: 0.117px;
+
+}
+
+.content_section h4 {
+	color: #fff;
+	font-family: Outfit;
+	font-size: 18px;
+	font-style: normal;
+	font-weight: 500;
+	letter-spacing: 0.117px;
+}
+
+.content_section p {
+	color: rgba(255, 255, 255, 0.4);
+	font-family: Outfit;
+	font-size: 14px;
+	font-style: normal;
+	font-weight: 300;
+	letter-spacing: 0.117px;
+}
+
+.fade_overlay {
+	position: absolute;
+	top: 0;
+	left: 0;
+	background: linear-gradient(
+		90deg,
+		rgba(18, 18, 18, 0) 0%,
+		rgba(18, 18, 18, 0) 92.74%,
+		#121212 100%
+	);
+	width: 100%;
+	height: 100%;
+	z-index: 3;
+}
+
+.actions {
+	display: flex;
+	flex-direction: column;
+}
+
+.actions hr {
+	width: 100%;
+	margin-bottom: 16px;
+	opacity: 1;
+	border-top: 1px rgba(255, 255, 255, 0.1) solid;
+}

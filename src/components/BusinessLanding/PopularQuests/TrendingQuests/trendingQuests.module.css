@@ -1,0 +1,27 @@
+.container {
+	max-width: 1100px;
+	width: 100%;
+	border:1px solid red;
+
+	display: flex;
+	flex-direction: column;
+}
+
+.card {
+	background: rgba(255, 255, 255, 0.05) !important;
+}
+
+.section_container {
+	padding: 0px 1rem;
+}
+
+.section_container > div > h3 {
+	font-family: unset !important;
+	color: #fff;
+	font-family: Outfit !important;
+	font-size: 24px !important;
+	font-style: normal;
+	font-weight: 500 !important;
+	letter-spacing: 0.117px;
+	text-transform: unset !important;
+}
