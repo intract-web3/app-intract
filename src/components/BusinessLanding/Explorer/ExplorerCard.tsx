@@ -36,7 +36,7 @@ function ExplorerCard() {
         <span className={explorercss.highlight_subheading}>
           Base Onchain Compass PRO ---{" "}
           <span className={explorercss.remaining}>
-            Don't think most of these projects should be out of Testnet, but yet
+            Dont think most of these projects should be out of Testnet, but yet
             here we are, one step ahead and providing guides one step ahead.
             Amazing work, this platform is the best for web3 quest. Really good
             features! Add please more ecosystems!

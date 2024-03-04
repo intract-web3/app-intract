@@ -10,8 +10,6 @@ import "swiper/css/navigation";
 import "swiper/css/pagination";
 import SliderButtons from "@/ui-components/swiper/SliderButtons";
 
-import { Autoplay, Navigation } from "swiper";
-
 function Explorer() {
   const arr = [
     {
@@ -62,7 +60,6 @@ function Explorer() {
           pagination={{ type: "bullets", clickable: true }}
           autoplay={true}
           loop={true}
-          modules={[Autoplay]}
           breakpoints={{
             1300: {
               slidesPerView: 4,

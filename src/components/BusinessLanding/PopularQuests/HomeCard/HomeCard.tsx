@@ -97,7 +97,7 @@ export function HomeCard({
     // 	});
     // }
     return rewards;
-  }, [reward, xps]);
+  }, [reward, xps, numTasks]);
 
   const isMarqueeEligible = formattedRewards.length > 1;
   const navigationUrl = link || `/quest/${_id}`;

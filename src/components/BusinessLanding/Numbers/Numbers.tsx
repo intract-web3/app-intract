@@ -28,6 +28,7 @@ function Numbers() {
             name={number.name}
             number={number.numbers}
             isLast={numbersList.length - 1 == index}
+            key={index}
           />
         );
       })}
