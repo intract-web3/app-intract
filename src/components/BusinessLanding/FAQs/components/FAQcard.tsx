@@ -16,7 +16,10 @@ const FAQcard: FC<IFAQcard> = (props) => {
   ];
   return (
     <>
-      <article className={faqcard.faq_card}>
+      <article
+        className={clsx(faqcard.faq_card, "cursor-pointer")}
+        onClick={() => setOpen(!open)}
+      >
         <div className="flex items-center w-full justify-between">
           <div
             className={faqcard.faq_text && (!open ? "text-[#FFFFFFCC]" : "")}

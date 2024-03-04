@@ -7,14 +7,19 @@ import valuesstyle from "./values.module.css";
 import GenericLayout from "@/components/genericSection/genericHeadingLayout/GenericLayout";
 import clsx from "clsx";
 import { Divider } from "@/ui-components/divider/Divider";
+
 function Values() {
-  console.log(actionCardDetails);
   return (
-    <article className={clsx("flex flex-col justify-center", valuesstyle.main)}>
+    <article
+      className={clsx(
+        "flex flex-col justify-center max-w-[1440px] md:px-12 sm:px-8 px-4",
+        valuesstyle.main
+      )}
+    >
       <GenericLayout
         heading={"Values"}
         subheading={
-          <div className="md:max-w-[70vw]">
+          <div className="max-w-[900px]">
             <span style={{ color: "rgba(255, 255, 255, 0.80)" }}>
               Enriching experiences, meaningful rewards, and empowering tools
             </span>{" "}
@@ -27,7 +32,7 @@ function Values() {
         <Image
           src={valuesCover}
           className={clsx(
-            "rounded-[16px] xs:mt-[24px] w-full object-cover min-h-[230px] block "
+            "rounded-[16px] xs:mt-[24px] md:mt-[56px] w-full object-cover min-h-[230px] block"
           )}
           alt={"values-cover"}
         ></Image>

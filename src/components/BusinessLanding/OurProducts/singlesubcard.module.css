@@ -20,7 +20,7 @@
 }
 
 .sub_card {
-    padding: 48px;
+    padding: 48px 0px 0px 48px;
     border-radius: 16px;
     border: 1px solid rgba(255, 255, 255, 0.10);
     background: linear-gradient(108deg, #1E1E1E 2.39%, #171717 27.66%, #0E0E0E 98.74%);
@@ -33,9 +33,13 @@
 }
 @media (max-width:700px) {
     .sub_card {
-        padding: 24px;
+        padding: 24px 0px 0px 16px;
         border-radius: 16px;
         border: 1px solid rgba(255, 255, 255, 0.10);
         background: linear-gradient(108deg, #1E1E1E 2.39%, #171717 27.66%, #0E0E0E 98.74%);
+    }
+
+    .heading {
+        font-size: 20px;
     }
 }

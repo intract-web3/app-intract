@@ -8,7 +8,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 function PopularQuest() {
   return (
-    <div className="flex  flex-col justify-center items-center">
+    <div className="flex  flex-col justify-center items-center md:px-12 sm:px-8 px-4">
       <GenericLayout heading={"Popular Quests"} />
       <Button
         className={popularqueststyles.button_discover_more}

@@ -9,7 +9,9 @@ interface INumberProps {
 }
 const Number: FC<INumberProps> = (props) => {
   return (
-    <article className={numberStyles.numbers_main}>
+    <article
+      className={clsx(numberStyles.numbers_main, "md:px-12 sm:px-8 px-4")}
+    >
       <section className={numberStyles.single_number}>
         <div className={numberStyles.name}>{props.name}</div>
         <span className={numberStyles.number}>{props.number}</span>

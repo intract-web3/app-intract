@@ -2,6 +2,9 @@
 	border-radius: 1000px;
 	background: rgba(255, 255, 255, 0.15);
 	height: 1px;
+	max-width: 1440px;
+	margin-left: auto;
+	margin-right: auto;
 }
 @media (min-width:1000px) {
 	

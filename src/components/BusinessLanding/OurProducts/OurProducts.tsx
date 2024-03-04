@@ -8,9 +8,10 @@ import clsx from "clsx";
 import { Divider } from "@/ui-components/divider/Divider";
 import SingleSubCard from "./SingleSubCard";
 import SubCards from "./SubCards";
+
 function OurProducts() {
   return (
-    <div>
+    <div className="max-w-[1440px] md:px-12 sm:px-8 px-4">
       <GenericLayout
         heading={"Our Products"}
         subheading={
@@ -21,7 +22,10 @@ function OurProducts() {
       />
       <section className="grid grid-cols-2 overflow-hidden ">
         <div
-          className={clsx(ourproductStyles.card, "col-span-2 md:grid-cols-2")}
+          className={clsx(
+            ourproductStyles.card,
+            "col-span-2 md:grid-cols-2 p-4 pt-6 sm:0 sm:pt-6"
+          )}
         >
           <Image
             src={image}
@@ -38,7 +42,12 @@ function OurProducts() {
             )}
           >
             <div className={ourproductStyles.card_heading}>Questing</div>
-            <span className={ourproductStyles.card_subheading}>
+            <span
+              className={clsx(
+                ourproductStyles.card_subheading,
+                "lg:max-w-[70%]"
+              )}
+            >
               Engage in a diverse range of quests tailored to your interests,
               unlocking opportunities for learning and earning rewards
             </span>
@@ -46,7 +55,7 @@ function OurProducts() {
           <Image
             src={questing}
             alt="questing"
-            className="w-full h-auto xs:w-full xs:mt-12 md:w-1/2 lg:w-1/2 xl:w-1/2 md:p-12 sm:mt-12 md:mt-0 relative"
+            className="w-full h-auto xs:w-full xs:mt-12 md:w-full md:p-6 sm:mt-12 md:mt-0 relative"
           />
         </div>
       </section>

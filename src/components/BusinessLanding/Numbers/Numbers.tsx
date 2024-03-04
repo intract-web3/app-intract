@@ -21,7 +21,7 @@ function Numbers() {
     },
   ];
   return (
-    <div className="xs:mt-20 w-full">
+    <div className="xs:mt-20 w-full max-w-[1440px]">
       {numbersList.map((number, index) => {
         return (
           <Number

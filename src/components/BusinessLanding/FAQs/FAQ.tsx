@@ -24,11 +24,11 @@ function FAQ() {
     },
   ];
   return (
-    <div className=" md:mt-[96px] flex flex-col justify-between">
+    <div className=" md:mt-[96px] max-w-[1440px] w-full flex flex-col justify-between md:px-12 sm:px-8 px-4">
       <GenericLayout
         heading={"FAQ's"}
         subheading={
-          <div className="md:max-w-[90%]">
+          <div className="xs:max-w-[90%]">
             <span style={{ color: "rgba(255, 255, 255, 0.80)" }}>
               Clarifying Your Quests
             </span>{" "}
@@ -37,7 +37,7 @@ function FAQ() {
         }
       />
       <div>
-        <div className="row mb-5 sm:mt-32 xs:mt-12">
+        <div className="row w-full flex flex-col gap-2 mb-5 md:mt-16 mt-6">
           {FAQ.map((faq, index) => (
             <FAQcard key={index} index={index} text={faq.text} />
           ))}

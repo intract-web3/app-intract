@@ -13,7 +13,7 @@ const Profile = ({
   designation: string;
 }) => {
   return (
-    <article className="gap-[32px] flex justify-start ml-2">
+    <article className="flex justify-start ml-[14px] xs:gap-x-[38px]">
       <Image
         src={imgUrl}
         className="rounded-full w-22 h-22"

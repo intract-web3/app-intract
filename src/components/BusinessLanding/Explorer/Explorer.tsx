@@ -45,7 +45,7 @@ function Explorer() {
   ];
 
   return (
-    <div className="flex flex-col justify-between w-full">
+    <div className="flex flex-col max-w-[1440px] justify-between w-full xs:mt-[34px] lg:mt-20 md:px-12 sm:px-8 px-4">
       <GenericLayout
         heading={"Hear What Our Explorers Say"}
         subheading={

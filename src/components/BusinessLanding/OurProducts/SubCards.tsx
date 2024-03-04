@@ -7,7 +7,12 @@ import clsx from "clsx";
 function SubCards() {
   return (
     <div className="grid grid-cols-2 gap-[16px] mt-[16px]">
-      <div className={clsx("md:col-span-1  col-span-2", subcardstyle.sub_card)}>
+      <div
+        className={clsx(
+          "md:col-span-1 overflow-hidden col-span-2",
+          subcardstyle.sub_card
+        )}
+      >
         <SingleSubCard
           heading={"Compass"}
           substring={
@@ -16,7 +21,12 @@ function SubCards() {
           image={subcard1}
         />
       </div>
-      <div className={clsx("md:col-span-1  col-span-2", subcardstyle.sub_card)}>
+      <div
+        className={clsx(
+          "md:col-span-1 overflow-hidden col-span-2",
+          subcardstyle.sub_card
+        )}
+      >
         <SingleSubCard
           heading={"Collections"}
           substring={"Discover Handpicked Adventures Curated for you"}

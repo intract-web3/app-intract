@@ -22,7 +22,7 @@ function ExploreLast() {
         />
         <span
           className={clsx(
-            "flex justify-center items-center relative",
+            "flex justify-center items-center relative -mb-1",
             explorelast.explore_text
           )}
         >
@@ -30,7 +30,7 @@ function ExploreLast() {
         </span>
         <span
           className={clsx(
-            "flex justify-center relative items-center",
+            "flex justify-center relative items-center my-12",
             explorelast.now_text
           )}
         >
@@ -45,7 +45,7 @@ function ExploreLast() {
           hasImg
         ></Button>
       </div>
-      <Image src={lightlines} className="h-full" alt={""} />
+      <Image src={lightlines} className="h-full w-full" alt={""} />
     </div>
   );
 }

@@ -12,29 +12,28 @@ import FAQ from "./FAQs/FAQ";
 import { Divider } from "@/ui-components/divider/Divider";
 import ExploreLast from "./ExploreLast/ExploreLast";
 import Users from "./Users/Users";
+
 function BusinessLanding() {
   return (
     <div className={businessLandingStyles.container}>
-      <div className={businessLandingStyles.businessLandingContainer}>
-        <Explore />
-        <Divider className="md:my-24" />
-        <OurProducts />
-        <Divider className="md:my-24 xs:my-[64px]" />
-        <Values />
-        {/* <Divider className="md:my-24 xs:my-[64px]" /> */}
-        <PopularQuest />
-        <Divider className="md:my-12 xs:my-[64px]" />
-        {/* <Users /> */}
-        <Numbers />
-        <div className={businessLandingStyles.tearContainer}>
-          <Image src={tear} alt="Tear" />
-        </div>
-        <Explorer />
-        <Divider />
-        <FAQ />
-        <Divider />
-        <ExploreLast />
-      </div>
+      <Explore />
+      <Divider className="md:mb-24 md:-mt-16" />
+      <OurProducts />
+      <Divider className="md:my-24 xs:my-[64px]" />
+      <Values />
+      {/* <Divider className="md:my-24 xs:my-[64px]" /> */}
+      <PopularQuest />
+      <Divider className="md:my-12 xs:my-[64px]" />
+      <Users />
+      <Numbers />
+
+      <Image src={tear} alt="Tear" className="w-full" />
+
+      <Explorer />
+      <Divider className="md:my-12 xs:my-[64px]" />
+      <FAQ />
+      <Divider />
+      <ExploreLast />
     </div>
   );
 }

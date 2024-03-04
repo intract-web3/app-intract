@@ -10,21 +10,25 @@ interface ISingleSubCard {
 }
 const SingleSubCard: FC<ISingleSubCard> = (props) => {
   return (
-    <div className="flex flex-col justify-between h-full ">
-      <div className="grid grid-cols-2 min-h-[70px]">
+    <div className="flex flex-col justify-between h-full">
+      <div className="grid grid-cols-4 gap-1.5 min-h-[70px]">
         <span
-          className={clsx(singlesubcard.heading, "col-span-2 md:col-span-1")}
+          className={clsx(singlesubcard.heading, "col-span-4 lg:col-span-1")}
         >
           {props.heading}
         </span>
         <span
-          className={clsx(singlesubcard.subheading, "col-span-2 md:col-span-1")}
+          className={clsx(singlesubcard.subheading, "col-span-4 lg:col-span-2")}
         >
           {props.substring}
         </span>
       </div>
-      <div className={clsx("xs:mt-3", singlesubcard.img)}>
-        <Image src={props.image} className="col-span-2" alt={"subcard"}></Image>
+      <div className={clsx("mt-10 sm:0", singlesubcard.img)}>
+        <Image
+          src={props.image}
+          className="col-span-2 min-h-[200px] object-cover object-left"
+          alt={"subcard"}
+        ></Image>
       </div>
     </div>
   );

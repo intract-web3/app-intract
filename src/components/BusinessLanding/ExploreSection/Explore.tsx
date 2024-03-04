@@ -16,7 +16,7 @@ function Explore() {
             values={["GEMs", "XPs"]}
             className={clsx(
               styles.pair,
-              "md:w-[218px] xs:w-[115px] absolute top-0 left-0 flex justify-between"
+              "md:w-[218px] xs:w-[115px] absolute top-0 left-0 flex justify-between "
             )}
           />
           <Pair

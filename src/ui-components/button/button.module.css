@@ -1,0 +1,13 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit&display=swap');
+.button {
+    display: flex;
+    width: 217px;
+    padding: 10px 0px;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Outfit';
+    border-radius: 8px;
+    border: 1px solid rgba(255, 255, 255, 0.20);
+    background: #6435E9;
+    box-shadow: 0px 2px 25px 0px rgba(0, 0, 0, 0.15);
+}
