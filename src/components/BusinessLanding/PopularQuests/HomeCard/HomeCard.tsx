@@ -9,7 +9,7 @@ import cardStyles from "../_atoms/Card/card.module.css";
 import { RewardBadge } from "../_atoms/RewardBadge/RewardBadge";
 import clsx from "clsx";
 import Image from "next/image";
-import { Link } from "react-router-dom";
+// import { Link } from "react-router-dom";
 import homeCardStyles from "./homeCard.module.css";
 
 export function HomeCard({
@@ -72,7 +72,7 @@ export function HomeCard({
   const navigationUrl = link || `/quest/${_id}`;
 
   return (
-    <Link to={""}>
+    <div>
       <Card
         style={{
           cursor: "pointer",
@@ -181,6 +181,6 @@ export function HomeCard({
           </div>
         )}
       </Card>
-    </Link>
+    </div>
   );
 }
