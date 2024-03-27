@@ -8,15 +8,17 @@ import clsx from "clsx";
 import { Divider } from "@/ui-components/divider/Divider";
 import SingleSubCard from "./SingleSubCard";
 import SubCards from "./SubCards";
-
+import SliderComponent from "./SliderComponent/SliderComponent";
+import ProgressComponent from "./SliderComponent/ProgressComponent";
+import Marketing from "./Marketing/Marketing";
 function OurProducts() {
   return (
     <div className="max-w-[1440px] md:px-12 sm:px-8 px-4">
       <GenericLayout
-        heading={"Our Products"}
+        heading={"What do we offer?"}
         subheading={
-          <div className="md:mb-[56px] xs:mb-[32px]">
-            Discover Top-Tier Products That Enhance <br /> Your Quest Experience
+          <div className="md:mb-[56px] md:w-[80%] xs:mb-[32px]">
+            There is a reason we are called <span className={ourproductStyles.world_number1}> World’s No. 1</span> Questing Platform
           </div>
         }
       />
@@ -27,14 +29,14 @@ function OurProducts() {
             "col-span-2 md:grid-cols-2 p-4 pt-6 sm:0 sm:pt-6"
           )}
         >
-          <Image
+          {/* <Image
             src={image}
             alt={""}
             className={clsx(
               "w-full h-full absolute top-0 left-0 object-cover",
               ourproductStyles.image_1
             )}
-          />
+          /> */}
           <article
             className={clsx(
               ourproductStyles.card_inner,
@@ -42,7 +44,9 @@ function OurProducts() {
             )}
           >
             <div className={ourproductStyles.card_heading}>Questing</div>
-            <span
+            <SliderComponent/>
+            {/* <ProgressComponent/> */}
+            {/* <span
               className={clsx(
                 ourproductStyles.card_subheading,
                 "lg:max-w-[70%]"
@@ -50,7 +54,7 @@ function OurProducts() {
             >
               Engage in a diverse range of quests tailored to your interests,
               unlocking opportunities for learning and earning rewards
-            </span>
+            </span> */}
           </article>
           <Image
             src={questing}
@@ -59,7 +63,7 @@ function OurProducts() {
           />
         </div>
       </section>
-      <SubCards />
+     <SubCards/>
     </div>
   );
 }

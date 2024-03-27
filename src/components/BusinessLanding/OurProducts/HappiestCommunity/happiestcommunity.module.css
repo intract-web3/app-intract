@@ -1,0 +1,35 @@
+/* styles.module.css */
+.container {
+    background-color: #1a1a1a; /* Adjust the color to match the design */
+    border-radius: 10px; /* Adjust as necessary */
+    color: white; /* Text color */
+    padding: 2rem; /* Padding around the content */
+  }
+  
+  .title {
+    font-size: 1.5rem; /* Adjust the font-size as needed */
+    margin-bottom: 1rem; /* Space after the title */
+  }
+  
+  .score {
+    font-size: 2rem; /* Adjust the font-size as needed */
+    margin-bottom: 1rem; /* Space after the score */
+  }
+  
+  .support {
+    font-size: 1.25rem; /* Adjust the font-size as needed */
+    margin-bottom: 1rem; /* Space after the support section */
+  }
+  
+  .verification {
+    font-size: 1.25rem; /* Adjust the font-size as needed */
+    margin-bottom: 1rem; /* Space after the task verification */
+  }
+  
+  .filtering {
+    font-size: 1.25rem; /* Adjust the font-size as needed */
+    /* No margin-bottom needed if it's the last element */
+  }
+  
+  /* Adjust the colors, sizes, and spacing as needed to match the design exactly */
+  

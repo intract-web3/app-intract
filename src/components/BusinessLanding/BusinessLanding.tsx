@@ -20,13 +20,13 @@ function BusinessLanding() {
       <Explore />
       <Divider className="md:mb-24 md:-mt-16" />
       <OurProducts />
-      <Divider className="md:my-24 xs:my-[64px]" />
-      <Values />
-      <PopularQuest />
       <Divider className="md:my-12 xs:my-[64px]" />
       <Users />
       <Numbers />
       <Image src={tear} alt="Tear" className="w-full" />
+      <Divider className="md:my-24 xs:my-[64px]" />
+      <Values />
+      {/* <PopularQuest /> */}
       <Explorer />
       <Divider className="md:my-12 xs:my-[64px]" />
       <FAQ />

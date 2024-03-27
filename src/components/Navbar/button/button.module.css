@@ -1,0 +1,8 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit&display=swap');
+.button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Outfit';
+    border-radius: 8px;
+}

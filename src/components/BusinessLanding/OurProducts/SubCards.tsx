@@ -4,35 +4,13 @@ import subcard1 from "./assets/subcard1.svg";
 import image from "../assets/Grids.png";
 import subcardstyle from "./singlesubcard.module.css";
 import clsx from "clsx";
+import Marketing from "./Marketing/Marketing";
+import Web3CommunityCard from "./HappiestCommunity/Web3CommunityCard";
 function SubCards() {
   return (
-    <div className="grid grid-cols-2 gap-[16px] mt-[16px]">
-      <div
-        className={clsx(
-          "md:col-span-1 overflow-hidden col-span-2",
-          subcardstyle.sub_card
-        )}
-      >
-        <SingleSubCard
-          heading={"Compass"}
-          substring={
-            "Explore quests of all projects, Navigate through your wallet analytics and rise up the ladder."
-          }
-          image={subcard1}
-        />
-      </div>
-      <div
-        className={clsx(
-          "md:col-span-1 overflow-hidden col-span-2",
-          subcardstyle.sub_card
-        )}
-      >
-        <SingleSubCard
-          heading={"Collections"}
-          substring={"Discover Handpicked Adventures Curated for you"}
-          image={subcard1}
-        />
-      </div>
+    <div className="grid grid-cols-2 gap-[16px] mt-[16px] ">
+      <Marketing/>
+      <Web3CommunityCard/>
     </div>
   );
 }

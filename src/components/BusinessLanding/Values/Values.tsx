@@ -17,14 +17,13 @@ function Values() {
       )}
     >
       <GenericLayout
-        heading={"Values"}
+        heading={"Some popular quests"}
         subheading={
           <div className="max-w-[900px]">
             <span style={{ color: "rgba(255, 255, 255, 0.80)" }}>
-              Enriching experiences, meaningful rewards, and empowering tools
+            Enriching experiences, meaningful rewards, and empowering tools
             </span>{" "}
-            that prioritize and enhance the journey of each individual explorer
-            within our platform
+            that prioritize and enhance the journey of each individual explorer within our platform
           </div>
         }
       />
@@ -37,7 +36,7 @@ function Values() {
           alt={"values-cover"}
         ></Image>
       </div>
-      <div className={valuesstyle.card_style}>
+      {/* <div className={valuesstyle.card_style}>
         {actionCardDetails.map((actionCardDetail, index) => {
           return (
             <>
@@ -51,7 +50,7 @@ function Values() {
             </>
           );
         })}
-      </div>
+      </div> */}
     </article>
   );
 }

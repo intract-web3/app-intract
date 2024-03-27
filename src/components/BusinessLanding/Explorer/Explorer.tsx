@@ -45,13 +45,13 @@ function Explorer() {
   return (
     <div className="flex flex-col max-w-[1440px] justify-between w-full xs:mt-[34px] lg:mt-20 md:px-12 sm:px-8 px-4">
       <GenericLayout
-        heading={"Hear What Our Explorers Say"}
+        heading={"Hear what our partners say about us"}
         subheading={
           <div className="sm:max-w-[70%]">
             <span style={{ color: "rgba(255, 255, 255, 0.80)" }}>
-              Real Stories, Real Experiences –
+            Real Stories, Real Experiences - 
             </span>
-            <span>Our Users Share Their Quest Journeys</span>
+            <span>Our Partners Share Their Quest Journeys</span>
           </div>
         }
       />

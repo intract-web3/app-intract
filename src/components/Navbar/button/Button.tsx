@@ -2,7 +2,6 @@ import clsx from "clsx";
 import { StaticImageData } from "next/image";
 import React, { FC } from "react";
 import style from "./button.module.css";
-import ArrowImage from "../../components/BusinessLanding/assets/rightarrow.svg";
 import { Outfit } from "next/font/google";
 import Image from "next/image";
 const outfit = Outfit({ subsets: ["latin"] });
@@ -18,18 +17,10 @@ const Button: FC<IButtonProps> = (props) => {
     <div
       className={clsx(
         style.button,
-        outfit.className,
-        "flex gap-2",
-        props.className,
+        props.className
       )}
     >
       {props.name}
-      {props.hasImg && (
-        <div>
-          {" "}
-          <Image src={ArrowImage} alt="" />{" "}
-        </div>
-      )}
     </div>
   );
 };

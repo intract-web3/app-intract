@@ -4,20 +4,16 @@ import Number from "./Number";
 function Numbers() {
   const numbersList = [
     {
-      name: "Quests",
-      numbers: "2K+",
+      name: "Transactions",
+      numbers: "$1B+",
+    },
+    {
+      name: "Onchain actions",
+      numbers: "168M+",
     },
     {
       name: "Projects",
-      numbers: "312",
-    },
-    {
-      name: "Rewards Won",
-      numbers: "$100K",
-    },
-    {
-      name: "Quests completed",
-      numbers: "10 Million",
+      numbers: "10000+",
     },
   ];
   return (
