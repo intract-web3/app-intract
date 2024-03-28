@@ -1,7 +1,7 @@
 .highlighted {
-    color: rgba(255, 255, 255, 0.80);
+    color: rgba(255, 255, 255, 0.8);
     text-align: center;
-    text-shadow: 0px 0px 5px rgba(0, 0, 0, 0.10);
+    text-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
     font-family: Outfit;
     font-size: 16px;
     font-style: normal;
@@ -9,12 +9,11 @@
     line-height: 20px; /* 125% */
     letter-spacing: 0.117px;
 }
-
 @media (min-width: 700px) {
     .highlighted {
-        color: rgba(255, 255, 255, 0.80);
+        color: rgba(255, 255, 255, 0.8);
         text-align: center;
-        text-shadow: 0px 0px 5px rgba(0, 0, 0, 0.10);
+        text-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
         font-family: Outfit;
         font-size: 24px;
         font-style: normal;
@@ -28,5 +27,4 @@
     .supported_main {
         max-width: 65%;
     }
-
 }

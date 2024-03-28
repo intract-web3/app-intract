@@ -1,35 +1,76 @@
-/* styles.module.css */
+.marketing_heading {
+    color: var(#ffffff, #fff);
+    text-shadow: 0px 1px 0px #000;
+    font-family: Outfit;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 30px; /* 125% */
+    letter-spacing: 0.117px;
+}
 .container {
-    background-color: #1a1a1a; /* Adjust the color to match the design */
-    border-radius: 10px; /* Adjust as necessary */
-    color: white; /* Text color */
-    padding: 2rem; /* Padding around the content */
-  }
-  
-  .title {
-    font-size: 1.5rem; /* Adjust the font-size as needed */
-    margin-bottom: 1rem; /* Space after the title */
-  }
-  
-  .score {
-    font-size: 2rem; /* Adjust the font-size as needed */
-    margin-bottom: 1rem; /* Space after the score */
-  }
-  
-  .support {
-    font-size: 1.25rem; /* Adjust the font-size as needed */
-    margin-bottom: 1rem; /* Space after the support section */
-  }
-  
-  .verification {
-    font-size: 1.25rem; /* Adjust the font-size as needed */
-    margin-bottom: 1rem; /* Space after the task verification */
-  }
-  
-  .filtering {
-    font-size: 1.25rem; /* Adjust the font-size as needed */
-    /* No margin-bottom needed if it's the last element */
-  }
-  
-  /* Adjust the colors, sizes, and spacing as needed to match the design exactly */
-  
+    padding: 48px;
+    border: 1px solid #ffffff12;
+    border-radius: 16px;
+    max-height: 457px;
+    background: linear-gradient(180deg, #131313 0%, #0a0a0a 100%);
+}
+
+.subtext {
+    color: rgba(255, 255, 255, 0.4);
+    text-shadow: 0px 2px 1px rgba(0, 0, 0, 0.1);
+    font-family: Outfit;
+    font-size: 16px;
+    font-style: normal;
+    margin-top: 8px;
+    font-weight: 500;
+    line-height: 20px; /* 125% */
+    letter-spacing: 0.117px;
+}
+
+.points {
+    color: #ffffff99;
+    text-shadow: 0px 1px 0px #000;
+    font-family: Outfit;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    /* padding: 16px 0px; */
+    letter-spacing: 0.117px;
+}
+.divider {
+    height: 1px;
+    flex-shrink: 0;
+    border-radius: 1000px;
+    background: #ffffff0d;
+    margin: 16px 0px;
+    mix-blend-mode: plus-lighter;
+}
+
+@media (max-width: 472px) {
+    .container {
+        padding: 24px;
+        border-radius: 16px;
+        border: 1px solid var(#ffffff12, rgba(255, 255, 255, 0.07));
+        background: linear-gradient(180deg, #131313 0%, #0a0a0a 100%);
+    }
+    .points {
+        color: #ffffff99;
+        text-shadow: 0px 1px 0px #000;
+        font-family: Outfit;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 500;
+        /* padding: 16px 0px; */
+        letter-spacing: 0.117px;
+    }
+    .impressions {
+        color: #ffffff66;
+        text-shadow: 0px 1px 0px #000;
+        font-family: Outfit;
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 400;
+        letter-spacing: 0.117px;
+    }
+}
