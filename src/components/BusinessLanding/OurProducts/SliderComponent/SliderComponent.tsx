@@ -34,7 +34,7 @@ function SliderComponent() {
         },
     ];
     return (
-        <article className='flex flex-col md:gap-[24px] xs:gap-[30px]'>
+        <article className='flex flex-col md:gap-[24px] mt-8 xs:gap-[30px]'>
             {questingarr.map((questingElment, index) => {
                 return (
                     <SinglePoint

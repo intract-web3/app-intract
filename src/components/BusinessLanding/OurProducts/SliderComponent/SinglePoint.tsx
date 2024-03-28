@@ -14,12 +14,13 @@ const ProgressBar = ({ progress }) => {
         <div
             style={{
                 width: '100%',
-                backgroundColor: 'rgba(255, 255, 255, 0.36)',
+                height: '1px',
+                backgroundColor: '#FFFFFF0D',
             }}
         >
             <div
                 style={{
-                    height: '2px',
+                    height: '1px',
                     width: `${progress}%`,
                     backgroundColor: '#6435E9',
                     transition: 'width 0.1s linear',

@@ -3,7 +3,7 @@ import React from 'react';
 import ourproductStyles from './ourproducts.module.css';
 import Image from 'next/image';
 import image from '../assets/Grids.png';
-import questing from './assets/ourproduct1.svg';
+import questing from './assets/goliveforfree.png';
 import clsx from 'clsx';
 import { Divider } from '@/ui-components/divider/Divider';
 import SingleSubCard from './SingleSubCard';
@@ -34,14 +34,6 @@ function OurProducts() {
                         'col-span-2 md:grid-cols-2 p-4 pt-6 sm:0 sm:pt-6'
                     )}
                 >
-                    {/* <Image
-            src={image}
-            alt={""}
-            className={clsx(
-              "w-full h-full absolute top-0 left-0 object-cover",
-              ourproductStyles.image_1
-            )}
-          /> */}
                     <article
                         className={clsx(
                             ourproductStyles.card_inner,
@@ -52,16 +44,6 @@ function OurProducts() {
                             Questing
                         </div>
                         <SliderComponent />
-                        {/* <ProgressComponent/> */}
-                        {/* <span
-              className={clsx(
-                ourproductStyles.card_subheading,
-                "lg:max-w-[70%]"
-              )}
-            >
-              Engage in a diverse range of quests tailored to your interests,
-              unlocking opportunities for learning and earning rewards
-            </span> */}
                     </article>
                     <Image
                         src={questing}
