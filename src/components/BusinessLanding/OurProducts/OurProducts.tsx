@@ -13,7 +13,7 @@ import ProgressComponent from './SliderComponent/ProgressComponent';
 import Marketing from './Marketing/Marketing';
 function OurProducts() {
     return (
-        <div className='max-w-[1440px] md:px-12 sm:px-8 px-4'>
+        <div className='max-w-[1440px] h-full md:px-12 sm:px-8 px-4'>
             <GenericLayout
                 heading={'What do we offer?'}
                 subheading={

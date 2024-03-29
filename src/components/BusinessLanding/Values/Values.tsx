@@ -12,7 +12,7 @@ function Values() {
     return (
         <article
             className={clsx(
-                'flex flex-col justify-center max-w-[1440px] md:px-12 sm:px-8 px-4',
+                'flex flex-col justify-center max-w-[1440px] md:px-12 sm:px-8 px-4 pt-12',
                 valuesstyle.main
             )}
         >

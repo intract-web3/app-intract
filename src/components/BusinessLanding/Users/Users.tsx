@@ -1,13 +1,14 @@
 import React from 'react';
 import userstyle from './users.module.css';
 import GenericLayout from '@/components/genericSection/genericHeadingLayout/GenericLayout';
+import clsx from 'clsx';
 function Users() {
     return (
-        <article>
+        <article className={clsx('relative', userstyle.main_users_article)}>
             <GenericLayout
                 heading={'(Y)OUR Success Story'}
                 subheading={
-                    <div className='sm:max-w-[70%]'>
+                    <div className='xs:max-w-[70%] mx-auto xs:mb-24'>
                         <span style={{ color: 'rgba(255, 255, 255, 0.80)' }}>
                             Real Stories, Real Experiences –
                         </span>
@@ -15,6 +16,7 @@ function Users() {
                     </div>
                 }
             />
+            <section className={userstyle.glow_effect} />
             <div className={userstyle.users}>
                 <div className={userstyle.content}>
                     <div className={userstyle.text}>5M+</div>

@@ -1,0 +1,25 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    width: 100%;
+    align-items: center;
+    margin-top: 95px;
+    justify-content: center;
+}
+
+.container .cards_section {
+    margin-top: 2rem;
+    width: 100%;
+    display: grid;
+    padding: 0px 120px;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+}
+
+@media (max-width: 768px) {
+    .container .cards_section {
+        grid-template-columns: 1fr;
+        padding: 0px 60px;
+    }
+}

@@ -5,4 +5,5 @@
     align-items: center;
     font-family: 'Outfit';
     border-radius: 8px;
+    max-height: 32px;
 }

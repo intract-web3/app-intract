@@ -13,24 +13,25 @@ import FAQ from './FAQs/FAQ';
 import { Divider } from '@/ui-components/divider/Divider';
 import ExploreLast from './ExploreLast/ExploreLast';
 import Users from './Users/Users';
+import ThoughLeader from './ThoughLeader/ThoughLeader';
 
 function BusinessLanding() {
     return (
         <div className={businessLandingStyles.container}>
             <Explore />
-            <Divider className='md:mb-24 md:-mt-16 w-full bg-red-300' />
+            <Divider className='md:mb-24 md:-mt-16 my-16 w-full bg-red-300' />
             <OurProducts />
+            <Divider className='md:mb-24 md:mt-24 my-16 w-full bg-red-300' />
             <Users />
             <Numbers />
-            <Image src={tear} alt='Tear' className='w-full' />
-            <Divider className='md:my-24 xs:my-[64px] w-full' />
+            <Image src={tear} alt='Tear' className='w-full pt-12 md:pt-10' />
             <Values />
             {/* <PopularQuest /> */}
             <Explorer />
-            <Divider className='md:mb-24 md:-mt-16 w-full bg-red-300' />
+            <ThoughLeader />
             <FAQ />
             <Divider />
-            <ExploreLast />
+            {/* <ExploreLast /> */}
         </div>
     );
 }
