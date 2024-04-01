@@ -32,7 +32,7 @@ function Explore() {
                     On-Chain users with our quest platform
                 </p>
                 <Button
-                    className={styles.exploreButton}
+                    className={clsx(styles.exploreButton, 'cursor-pointer')}
                     name='Explore'
                 ></Button>
                 <section className={styles.base_network_logos}>

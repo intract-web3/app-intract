@@ -17,7 +17,7 @@ const Web3CommunityCard = () => {
             <div
                 className={clsx(styles.divider, 'md:my-[16px] xs:my-[24px]')}
             ></div>
-            <div className='md:h-[80%] h-[70%] flex flex-col justify-between'>
+            <div className='h-full'>
                 <div className={styles.points}>
                     98.4% Customer Satisfaction Score
                     <div

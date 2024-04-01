@@ -128,6 +128,7 @@
     margin-top: 48px;
     padding: 10px 0px;
     justify-content: center;
+    cursor: pointer;
     align-items: center;
     border-radius: 8px;
     border: 1px solid rgba(255, 255, 255, 0.2);
@@ -137,6 +138,7 @@
 
 .exploreButton:hover {
     background-color: #3700b3;
+    cursor: pointer;
 }
 .pair {
     color: rgba(255, 255, 255, 0.4);
@@ -215,6 +217,7 @@
         max-width: 217px !important;
         width: 100%;
         align-self: center;
+        cursor: pointer;
         padding: 10px 0px;
         bottom: 50vw;
         justify-content: center;
