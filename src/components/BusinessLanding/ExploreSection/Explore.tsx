@@ -4,9 +4,15 @@ import GemsAtoms from './atoms/gemsAtoms';
 import clsx from 'clsx';
 import styles from './explore.module.css';
 import Button from '@/ui-components/button/Button';
-import Image from 'next/image';
 import img from './assets/BG.png';
+import Image from 'next/image';
 import Pair from './Pair';
+import base from './partnerLogos/base.png';
+import blast from './partnerLogos/blast.png';
+import linea from './partnerLogos/Linea.png';
+import zksync from './partnerLogos/zksync.png';
+import mode from './partnerLogos/mode.png';
+import polygon from './partnerLogos/polygon.png';
 import Marquee from 'react-fast-marquee';
 import image1 from '../../BusinessLanding/assets/ecosystemLogos/Linea.svg';
 import image2 from '../../BusinessLanding/assets/ecosystemLogos/blast.png';
@@ -29,6 +35,23 @@ function Explore() {
                     className={styles.exploreButton}
                     name='Explore'
                 ></Button>
+                <section className={styles.base_network_logos}>
+                    <div className={styles.left_transparent_gradient} />
+                    <div className={styles.right_transparent_gradient} />
+
+                    <Marquee autoFill speed={50}>
+                        {[base, blast, linea, zksync, mode, polygon].map(
+                            (logo) => (
+                                <Image
+                                    style={{ aspectRatio: '1/1' }}
+                                    className={styles.logo_image}
+                                    src={logo}
+                                    alt={'logo'}
+                                />
+                            )
+                        )}
+                    </Marquee>
+                </section>
             </div>
         </div>
     );

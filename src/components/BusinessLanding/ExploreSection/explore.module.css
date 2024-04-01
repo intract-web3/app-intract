@@ -34,10 +34,64 @@
     font-weight: 600;
     line-height: 120px; /* 125% */
     letter-spacing: 0.117px;
-    background: white;
+    background: linear-gradient(
+        180deg,
+        #fff 0%,
+        #e1e1e1 48.88%,
+        #a3a3a3 72.01%,
+        #8c8c8c 110.56%
+    );
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+    mix-blend-mode: plus-lighter;
+}
+.exploreSection .base_network_logos {
+    width: 100%;
+    position: relative;
+    margin-top: 126px;
+}
+
+.card .left_transparent_gradient {
+    z-index: 2;
+    top: 0;
+    left: -15px;
+    height: calc(100% - 20px);
+    width: calc(100% + 30px);
+    position: absolute;
+    background: linear-gradient(
+        90deg,
+        #121212 5.13%,
+        rgba(18, 18, 18, 0) 14.19%,
+        rgba(18, 18, 18, 0) 50.67%,
+        rgba(18, 18, 18, 0) 83.72%,
+        #121212 95.51%
+    );
+}
+
+.marquee {
+    -moz-transform: translateX(100%);
+    -webkit-transform: translateX(100%);
+    transform: translateX(100%);
+
+    position: absolute;
+    right: 0;
+    animation: marquee-animation1 20s normal infinite;
+}
+
+.logo_image {
+    width: 162.291px;
+    height: 32px;
+    flex-shrink: 0;
+    margin: 0px 40px;
+}
+@keyframes marquee-animation1 {
+    0% {
+        transform: translateX(100%);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
 }
 
 .description {

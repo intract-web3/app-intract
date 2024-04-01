@@ -45,9 +45,10 @@ function Explorer() {
     ];
 
     return (
-        <div className='flex flex-col relative max-w-[1440px] justify-between w-full xs:mt-[34px] lg:mt-20 md:px-12 sm:px-8 px-4'>
+        <div className='flex flex-col relative max-w-[1440px] h-[100vh] w-full xs:mt-[34px] lg:mt-20 md:px-12 sm:px-8 px-4'>
             <GenericLayout
                 heading={'Hear what our partners say about us'}
+                className='md:mt-24'
                 subheading={
                     <div className='sm:max-w-[70%]'>
                         <span style={{ color: 'rgba(255, 255, 255, 0.80)' }}>
@@ -59,7 +60,7 @@ function Explorer() {
             />
             <Image
                 src={img}
-                className='min-w-full h-full absolute top-0 left-0'
+                className='min-w-full h-[100vh] absolute top-0 left-0'
                 alt='explore-image'
             />
             <div className='flex gap-[16px] sm:mt-[56px] xs:mt-[12px] w-full'>

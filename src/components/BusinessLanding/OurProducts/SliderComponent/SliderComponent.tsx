@@ -1,12 +1,18 @@
 import React, { useState } from 'react';
 import golive from '../assets/goliveforfree.png';
 import SinglePoint from './SinglePoint';
+import style from './singlepoint.module.css';
 function SliderComponent() {
     const [activeIndexValue, setActiveIndexValue] = React.useState(0);
     const [progress, setProgress] = useState(0);
     const questingarr = [
         {
-            title: <div>{`Go live for FREE`}</div>,
+            title: (
+                <div>
+                    <span>{`Go live for`}</span>{' '}
+                    <span className={style.exclusive}>FREE</span>
+                </div>
+            ),
             img: golive,
         },
         {
@@ -30,7 +36,12 @@ function SliderComponent() {
             img: golive,
         },
         {
-            title: <div>{`For Pre-Token and Airdrop Ecosystems`}</div>,
+            title: (
+                <div>
+                    <span>{`For Pre-Token and`}</span>{' '}
+                    <span className={style.exclusive}>Airdrop Ecosystems</span>
+                </div>
+            ),
             img: golive,
         },
     ];

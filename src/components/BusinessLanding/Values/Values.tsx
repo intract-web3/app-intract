@@ -1,7 +1,7 @@
 import React from 'react';
 import Image from 'next/image';
 import { actionCardDetails } from './utils';
-import valuesCover from './assets/populareco.png';
+import valuesCover from './assets/valuescover.svg';
 import ActionCards from './ActionCards/ActionCards';
 import valuesstyle from './values.module.css';
 import GenericLayout from '@/components/genericSection/genericHeadingLayout/GenericLayout';
@@ -12,7 +12,7 @@ function Values() {
     return (
         <article
             className={clsx(
-                'flex flex-col justify-center max-w-[1440px] md:px-12 sm:px-8 px-4 pt-12',
+                'flex flex-col justify-center max-w-[1440px] md:px-12 sm:px-8 px-4',
                 valuesstyle.main
             )}
         >
@@ -33,7 +33,7 @@ function Values() {
                 <Image
                     src={valuesCover}
                     className={clsx(
-                        'rounded-[16px] xs:mt-[24px] md:mt-[56px] w-full object-cover min-h-[230px] block'
+                        'rounded-[16px] xs:mt-[24px] md:mt-[56px] w-full object-cover min-h-[230px] max-h-[400px] h-full block'
                     )}
                     alt={'values-cover'}
                 ></Image>
