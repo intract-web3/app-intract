@@ -45,7 +45,7 @@ function Explorer() {
     ];
 
     return (
-        <div className='flex flex-col relative max-w-[1440px] h-[100vh] w-full xs:mt-[34px] lg:mt-20 md:px-12 sm:px-8 px-4'>
+        <div className='flex flex-col relative max-w-[1440px] md:h-[100vh] w-full xs:mt-[34px] lg:mt-20 md:px-12 sm:px-8 px-4'>
             <GenericLayout
                 heading={'Hear what our partners say about us'}
                 className='md:mt-24'

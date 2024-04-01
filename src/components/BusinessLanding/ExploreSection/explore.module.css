@@ -10,6 +10,7 @@
     color: white;
 
     height: 100vh;
+    position: relative;
     width: 100%;
     overflow: hidden;
 }
@@ -125,7 +126,6 @@
     width: 100%;
     max-width: 217px;
     margin-top: 48px;
-    align-self: center;
     padding: 10px 0px;
     justify-content: center;
     align-items: center;
@@ -152,10 +152,10 @@
     letter-spacing: 0.117px;
 }
 
-/* Responsive styles */
 @media (max-width: 600px) {
     .exploreSection {
         flex-direction: column;
+        padding: 25px;
         position: relative;
     }
     .pair {
@@ -212,11 +212,11 @@
     .exploreButton {
         display: flex;
         position: absolute;
-        margin-top: 100%;
         max-width: 217px !important;
         width: 100%;
         align-self: center;
         padding: 10px 0px;
+        bottom: 50vw;
         justify-content: center;
         align-items: center;
         border-radius: 8px;
