@@ -11,7 +11,7 @@ export default function Home() {
                 <Navbar />
                 <BusinessLanding />
                 <Divider className='my-16 w-full bg-red-300' />
-                {/* <GlobalFooter /> */}
+                <GlobalFooter />
             </BrowserRouter>
         </>
     );

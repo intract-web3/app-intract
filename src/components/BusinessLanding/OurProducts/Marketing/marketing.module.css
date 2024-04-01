@@ -3,6 +3,7 @@
     border: 1px solid #ffffff12;
     border-radius: 16px;
     max-height: 457px;
+    height: 100%;
     position: relative;
     background: linear-gradient(180deg, #131313 0%, #0a0a0a 100%);
 }
@@ -103,6 +104,8 @@
     .container {
         padding: 24px;
         border-radius: 16px;
+        max-height: 457px;
+        height: 100%;
         border: 1px solid var(#ffffff12, rgba(255, 255, 255, 0.07));
         background: linear-gradient(180deg, #131313 0%, #0a0a0a 100%);
     }

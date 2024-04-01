@@ -1,5 +1,5 @@
 import { Divider } from '@/ui-components/divider/Divider';
-import React from 'react';
+import React, { useState } from 'react';
 import GemsAtoms from './atoms/gemsAtoms';
 import clsx from 'clsx';
 import styles from './explore.module.css';
@@ -19,7 +19,7 @@ import image2 from '../../BusinessLanding/assets/ecosystemLogos/blast.png';
 import image3 from '../../BusinessLanding/assets/ecosystemLogos/zksync.svg';
 function Explore() {
     const [play, setPlay] = React.useState(false);
-    const ecosystemLogos = [image1, image2, image3];
+    const [hovered, setHovered] = useState(false);
     return (
         <div className={styles.exploreSection}>
             <section className={styles.glow_effect} />
@@ -41,8 +41,11 @@ function Explore() {
 
                     <Marquee autoFill speed={50}>
                         {[base, blast, linea, zksync, mode, polygon].map(
-                            (logo) => (
+                            (logo, index) => (
                                 <Image
+                                    onMouseOver={() => setHovered(true)}
+                                    onMouseLeave={() => setHovered(false)}
+                                    key={index}
                                     style={{ aspectRatio: '1/1' }}
                                     className={styles.logo_image}
                                     src={logo}
