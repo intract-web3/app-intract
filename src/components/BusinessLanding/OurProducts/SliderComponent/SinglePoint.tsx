@@ -47,7 +47,7 @@ const SinglePoint: FC<ISinglePoint> = (props) => {
         }
 
         return () => clearInterval(intervalId);
-    }, [progress]);
+    }, [progress, setActiveIndexValue, setProgress]);
 
     const handleClick = (index: number) => {
         setActiveIndexValue(index);
