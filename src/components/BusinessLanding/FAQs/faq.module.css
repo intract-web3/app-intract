@@ -1,0 +1,21 @@
+.glow_effect {
+    height: 100px;
+    position: absolute;
+    top: 0;
+    margin-top: -96px;
+    background: linear-gradient(to bottom, #ffffffcc, #ffffff0d);
+    width: 100%;
+    opacity: 0.07;
+}
+
+@media (max-width: 778px) {
+    .glow_effect {
+        height: 100px;
+        position: absolute;
+        top: 0;
+        margin-top: -64px;
+        background: linear-gradient(to bottom, #ffffffcc, #ffffff0d);
+        width: 100%;
+        opacity: 0.07;
+    }
+}

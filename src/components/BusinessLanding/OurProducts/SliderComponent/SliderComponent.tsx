@@ -1,8 +1,9 @@
-import React from 'react';
+import React, { useState } from 'react';
 import golive from '../assets/goliveforfree.png';
 import SinglePoint from './SinglePoint';
 function SliderComponent() {
     const [activeIndexValue, setActiveIndexValue] = React.useState(0);
+    const [progress, setProgress] = useState(0);
     const questingarr = [
         {
             title: <div>{`Go live for FREE`}</div>,
@@ -39,6 +40,8 @@ function SliderComponent() {
                 return (
                     <SinglePoint
                         key={index}
+                        progress={progress}
+                        setProgress={setProgress}
                         activeIndexValue={activeIndexValue}
                         setActiveIndexValue={setActiveIndexValue}
                         title={questingElment.title}

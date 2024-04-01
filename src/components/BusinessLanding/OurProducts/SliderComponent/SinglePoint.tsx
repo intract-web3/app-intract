@@ -8,6 +8,8 @@ interface ISinglePoint {
     index: number;
     activeIndexValue: number;
     setActiveIndexValue: (a: number) => void;
+    progress: number;
+    setProgress: (a: number) => void;
 }
 const ProgressBar = ({ progress }) => {
     return (
@@ -30,16 +32,14 @@ const ProgressBar = ({ progress }) => {
     );
 };
 const SinglePoint: FC<ISinglePoint> = (props) => {
-    const { title, index, setActiveIndexValue } = props;
-    // const [activeIndex, setActiveIndex] = useState(0);
-    const [progress, setProgress] = useState(0);
+    const { title, index, setActiveIndexValue, progress, setProgress } = props;
     useEffect(() => {
         let intervalId: any;
 
         if (progress < 100) {
             intervalId = setInterval(() => {
                 setProgress((prevProgress) => prevProgress + 1);
-            }, 50);
+            }, 100);
         } else {
             clearInterval(intervalId);
             setProgress(0);
